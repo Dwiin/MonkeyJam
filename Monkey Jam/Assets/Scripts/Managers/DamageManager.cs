@@ -24,8 +24,6 @@ namespace MonkeyJam.Managers {
     }
 
     public class DamageManager {
-        //private static DamageManager _instance;
-       // public static DamageManager Instance { get { if (_instance == null) _instance = new DamageManager(); return _instance; } set { } }
 
 
         public static void HandleDamage(DamageInfo info) {
