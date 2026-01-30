@@ -1,13 +1,13 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1102 &-8558403749644532409
+--- !u!1102 &-7901548883541474684
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BaseArcher_Jump-Fall
+  m_Name: Fall
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -20,20 +20,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 600d5db0b7030be42bcd582f0d8b432b, type: 2}
+  m_Motion: {fileID: 7400000, guid: 2d7ce68f94fed32419bb31a1cffa4ddc, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &-8298184976082257917
+--- !u!1102 &-6341606716525778005
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BaseArcher_Death
+  m_Name: Death
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -46,20 +46,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 51989306b3b203442ad938624830830c, type: 2}
+  m_Motion: {fileID: 7400000, guid: 187be1892649ac041b31cdd1ecf38c8a, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &-5922721069734226908
+--- !u!1102 &-4549362900524379268
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BaseArcher_Run
+  m_Name: Idle
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -72,20 +72,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 7c6db8afd6dd5b1478997653db9fe645, type: 2}
+  m_Motion: {fileID: 7400000, guid: c48d7bd999066114d815cfc1c93dabf0, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &-2105687762451962442
+--- !u!1102 &-2454824582821840243
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BaseArcher_Idle
+  m_Name: Run
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -98,20 +98,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 8d3e53b3762616a4bbce47e6f7547e81, type: 2}
+  m_Motion: {fileID: 7400000, guid: 007026641d9076c4c92063955ff99f45, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &-291069456327331438
+--- !u!1102 &-1301604050693838351
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BaseArcher_Attack
+  m_Name: Take_Hit
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -124,7 +124,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 8641f4e8a5eae6d4588af08d2738fea3, type: 2}
+  m_Motion: {fileID: 7400000, guid: 8c3d07f56d9d1aa46a6f0b5717f6b76f, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -136,19 +136,13 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BaseArcher_Controller
+  m_Name: Evil_Wizard_Controller
   serializedVersion: 5
-  m_AnimatorParameters:
-  - m_Name: isTrigger
-    m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+  m_AnimatorParameters: []
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
-    m_StateMachine: {fileID: 477805875673593887}
+    m_StateMachine: {fileID: 5286221129526290384}
     m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
@@ -158,7 +152,33 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
---- !u!1107 &477805875673593887
+--- !u!1102 &3979297754226134221
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Jump
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: 137f8055b03fe914aacd5645ef7d7a4a, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1107 &5286221129526290384
 AnimatorStateMachine:
   serializedVersion: 6
   m_ObjectHideFlags: 1
@@ -168,26 +188,29 @@ AnimatorStateMachine:
   m_Name: Base Layer
   m_ChildStates:
   - serializedVersion: 1
-    m_State: {fileID: -2105687762451962442}
-    m_Position: {x: 300, y: 120, z: 0}
+    m_State: {fileID: 6927139730572407917}
+    m_Position: {x: 430, y: 130, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -8558403749644532409}
-    m_Position: {x: -200, y: 10, z: 0}
+    m_State: {fileID: 8242536192137501982}
+    m_Position: {x: 440, y: 140, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 5430173322193895683}
-    m_Position: {x: 300, y: 20, z: 0}
+    m_State: {fileID: -6341606716525778005}
+    m_Position: {x: 450, y: 150, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -5922721069734226908}
-    m_Position: {x: 300, y: 200, z: 0}
+    m_State: {fileID: -7901548883541474684}
+    m_Position: {x: 460, y: 160, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -8298184976082257917}
-    m_Position: {x: 520, y: 210, z: 0}
+    m_State: {fileID: -4549362900524379268}
+    m_Position: {x: 470, y: 170, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 4386809754017477019}
-    m_Position: {x: 530, y: 160, z: 0}
+    m_State: {fileID: 3979297754226134221}
+    m_Position: {x: 480, y: 180, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -291069456327331438}
-    m_Position: {x: 30, y: -40, z: 0}
+    m_State: {fileID: -2454824582821840243}
+    m_Position: {x: 490, y: 190, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -1301604050693838351}
+    m_Position: {x: 500, y: 200, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -197,15 +220,15 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: -2105687762451962442}
---- !u!1102 &4386809754017477019
+  m_DefaultState: {fileID: 6927139730572407917}
+--- !u!1102 &6927139730572407917
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BaseArcher_Dash
+  m_Name: Attack_1
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -218,20 +241,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 39f0d7d3f7563b64cb55755727969893, type: 2}
+  m_Motion: {fileID: 7400000, guid: c0357a2c48f534b4aaece452fb266940, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &5430173322193895683
+--- !u!1102 &8242536192137501982
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BaseArcher_MeleeAttack
+  m_Name: Attack_2
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -244,7 +267,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 370bb9985d0666b4b873a334c9fbe23a, type: 2}
+  m_Motion: {fileID: 7400000, guid: d3d070da0cdfb564486df1bec3a841e3, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
