@@ -1,0 +1,871 @@
+fileFormatVersion: 2
+guid: 1ea4814caec1be745b2381b9262cff0a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1324545184301885363
+    second: cult-knight_0
+  - first:
+      213: 311084244800584676
+    second: cult-knight_1
+  - first:
+      213: 3608477679416825335
+    second: cult-knight_2
+  - first:
+      213: 5928828434777736502
+    second: cult-knight_3
+  - first:
+      213: -5189573347431631108
+    second: cult-knight_4
+  - first:
+      213: -8980842030495898883
+    second: cult-knight_5
+  - first:
+      213: 1266021200711986903
+    second: cult-knight_6
+  - first:
+      213: -4284701574815773492
+    second: cult-knight_7
+  - first:
+      213: -6589109423048943024
+    second: cult-knight_8
+  - first:
+      213: -5537992883694224355
+    second: cult-knight_9
+  - first:
+      213: -2060161551994701554
+    second: cult-knight_10
+  - first:
+      213: -6305472169689432999
+    second: cult-knight_11
+  - first:
+      213: 7990663979160245282
+    second: cult-knight_12
+  - first:
+      213: -854062791021863891
+    second: cult-knight_13
+  - first:
+      213: 1110877225282174335
+    second: cult-knight_14
+  - first:
+      213: -8701955569535416769
+    second: cult-knight_15
+  - first:
+      213: 3781472619020244388
+    second: cult-knight_16
+  - first:
+      213: -3452542068817348384
+    second: cult-knight_17
+  - first:
+      213: 6658908534788833529
+    second: cult-knight_18
+  - first:
+      213: -7415018215968985726
+    second: cult-knight_19
+  - first:
+      213: -2471611635352362119
+    second: cult-knight_20
+  - first:
+      213: -8308434681942574407
+    second: cult-knight_21
+  - first:
+      213: -5609980874335516047
+    second: cult-knight_22
+  - first:
+      213: -3143193593008583249
+    second: cult-knight_23
+  - first:
+      213: -5089420457077667594
+    second: cult-knight_24
+  - first:
+      213: 5786393241669619525
+    second: cult-knight_25
+  - first:
+      213: 1141195020342163160
+    second: cult-knight_26
+  - first:
+      213: 4626138148263328899
+    second: cult-knight_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cult-knight_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 127
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b7a44fc3dab16210800000000000000
+      internalID: 1324545184301885363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-knight_1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 127
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eb3f82f871315400800000000000000
+      internalID: 311084244800584676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-knight_2
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 127
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f5d095b453e31230800000000000000
+      internalID: 3608477679416825335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-knight_3
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 127
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63589259c0e674250800000000000000
+      internalID: 5928828434777736502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-knight_4
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 127
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf6b08a398eeaf7b0800000000000000
+      internalID: -5189573347431631108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-knight_5
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 95
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df2e46c71c3ad5380800000000000000
+      internalID: -8980842030495898883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-knight_6
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 95
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7de2d8a039fc19110800000000000000
+      internalID: 1266021200711986903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-knight_7
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 95
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccc8c887e9ea984c0800000000000000
+      internalID: -4284701574815773492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-knight_8
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 95
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05a1dfce3e7ce84a0800000000000000
+      internalID: -6589109423048943024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-knight_9
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 95
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1cb3c650d81523b0800000000000000
+      internalID: -5537992883694224355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-knight_10
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 95
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e093071dbf5d863e0800000000000000
+      internalID: -2060161551994701554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-knight_11
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 63
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95cbc8038767e78a0800000000000000
+      internalID: -6305472169689432999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-knight_12
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 63
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2241b5d7d8a84ee60800000000000000
+      internalID: 7990663979160245282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-knight_13
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 63
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2c5345aa62c524f0800000000000000
+      internalID: -854062791021863891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-knight_14
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 63
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7df30263f0aa6f00800000000000000
+      internalID: 1110877225282174335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-knight_15
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 63
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f360c92b3817c3780800000000000000
+      internalID: -8701955569535416769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-knight_16
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 63
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a55198df4d7a7430800000000000000
+      internalID: 3781472619020244388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-knight_17
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 31
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e8bc00e74b1610d0800000000000000
+      internalID: -3452542068817348384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-knight_18
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 31
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f0c7ef2802396c50800000000000000
+      internalID: 6658908534788833529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-knight_19
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 31
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28d2e121830981990800000000000000
+      internalID: -7415018215968985726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-knight_20
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 31
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 973a914105213bdd0800000000000000
+      internalID: -2471611635352362119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-knight_21
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 31
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9baf64f3da282bc80800000000000000
+      internalID: -8308434681942574407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-knight_22
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17a0f742e185522b0800000000000000
+      internalID: -5609980874335516047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-knight_23
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 3
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fad807c94122164d0800000000000000
+      internalID: -3143193593008583249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-knight_24
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 0
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f887472f0fbe59b0800000000000000
+      internalID: -5089420457077667594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-knight_25
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54f4074eef56d4050800000000000000
+      internalID: 5786393241669619525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-knight_26
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 0
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d670fe13d656df00800000000000000
+      internalID: 1141195020342163160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-knight_27
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 0
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38c7e11b228533040800000000000000
+      internalID: 4626138148263328899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      cult-knight_0: 1324545184301885363
+      cult-knight_1: 311084244800584676
+      cult-knight_10: -2060161551994701554
+      cult-knight_11: -6305472169689432999
+      cult-knight_12: 7990663979160245282
+      cult-knight_13: -854062791021863891
+      cult-knight_14: 1110877225282174335
+      cult-knight_15: -8701955569535416769
+      cult-knight_16: 3781472619020244388
+      cult-knight_17: -3452542068817348384
+      cult-knight_18: 6658908534788833529
+      cult-knight_19: -7415018215968985726
+      cult-knight_2: 3608477679416825335
+      cult-knight_20: -2471611635352362119
+      cult-knight_21: -8308434681942574407
+      cult-knight_22: -5609980874335516047
+      cult-knight_23: -3143193593008583249
+      cult-knight_24: -5089420457077667594
+      cult-knight_25: 5786393241669619525
+      cult-knight_26: 1141195020342163160
+      cult-knight_27: 4626138148263328899
+      cult-knight_3: 5928828434777736502
+      cult-knight_4: -5189573347431631108
+      cult-knight_5: -8980842030495898883
+      cult-knight_6: 1266021200711986903
+      cult-knight_7: -4284701574815773492
+      cult-knight_8: -6589109423048943024
+      cult-knight_9: -5537992883694224355
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

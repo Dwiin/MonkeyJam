@@ -1,0 +1,871 @@
+fileFormatVersion: 2
+guid: cbf7eb3623c4b5b4b8238dcba39dd23b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6284193192162437211
+    second: high-cultist_0
+  - first:
+      213: -802564067948958604
+    second: high-cultist_1
+  - first:
+      213: -1184398665067185569
+    second: high-cultist_2
+  - first:
+      213: 79040410314267720
+    second: high-cultist_3
+  - first:
+      213: 7833627644892977511
+    second: high-cultist_4
+  - first:
+      213: -1672242975124098309
+    second: high-cultist_5
+  - first:
+      213: -7097510942572612525
+    second: high-cultist_6
+  - first:
+      213: -557624876333684059
+    second: high-cultist_7
+  - first:
+      213: 7071894780726987937
+    second: high-cultist_8
+  - first:
+      213: -5862492049069483389
+    second: high-cultist_9
+  - first:
+      213: -7712752599115617478
+    second: high-cultist_10
+  - first:
+      213: 359344410820599361
+    second: high-cultist_11
+  - first:
+      213: -8260765428081832046
+    second: high-cultist_12
+  - first:
+      213: 1140832693818779561
+    second: high-cultist_13
+  - first:
+      213: -6140414729459620323
+    second: high-cultist_14
+  - first:
+      213: 4145723616077174241
+    second: high-cultist_15
+  - first:
+      213: 1962543650138451116
+    second: high-cultist_16
+  - first:
+      213: -7027835547756505328
+    second: high-cultist_17
+  - first:
+      213: -3786258231476581393
+    second: high-cultist_18
+  - first:
+      213: -1236166010553835595
+    second: high-cultist_19
+  - first:
+      213: -1871622948740435962
+    second: high-cultist_20
+  - first:
+      213: 3120223121373280202
+    second: high-cultist_21
+  - first:
+      213: 333893989085286530
+    second: high-cultist_22
+  - first:
+      213: -8755558791705922877
+    second: high-cultist_23
+  - first:
+      213: -1261426118624400533
+    second: high-cultist_24
+  - first:
+      213: 967478758414307518
+    second: high-cultist_25
+  - first:
+      213: 2412946090875907717
+    second: high-cultist_26
+  - first:
+      213: 3392274379673570527
+    second: high-cultist_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: high-cultist_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 127
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5825c6c960f53750800000000000000
+      internalID: 6284193192162437211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: high-cultist_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 127
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47ce86c7b38bcd4f0800000000000000
+      internalID: -802564067948958604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: high-cultist_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 127
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5a393870bb209fe0800000000000000
+      internalID: -1184398665067185569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: high-cultist_3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 127
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84cdeab95dec81100800000000000000
+      internalID: 79040410314267720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: high-cultist_4
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 127
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7699684b6d2a6bc60800000000000000
+      internalID: 7833627644892977511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: high-cultist_5
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 95
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf2f591cfdffac8e0800000000000000
+      internalID: -1672242975124098309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: high-cultist_6
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 95
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 354f286e663908d90800000000000000
+      internalID: -7097510942572612525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: high-cultist_7
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 63
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aaa530212be248f0800000000000000
+      internalID: -557624876333684059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: high-cultist_8
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 95
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1accb26a5da642260800000000000000
+      internalID: 7071894780726987937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: high-cultist_9
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 63
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38a59acca8e34aea0800000000000000
+      internalID: -5862492049069483389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: high-cultist_10
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 95
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3b2e31006cc6f490800000000000000
+      internalID: -7712752599115617478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: high-cultist_11
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 95
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14edbf676d5acf400800000000000000
+      internalID: 359344410820599361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: high-cultist_12
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 95
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29fca5e4c9ddb5d80800000000000000
+      internalID: -8260765428081832046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: high-cultist_13
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 63
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a768376a4d05df00800000000000000
+      internalID: 1140832693818779561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: high-cultist_14
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 63
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d16abfc365dd8caa0800000000000000
+      internalID: -6140414729459620323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: high-cultist_15
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 63
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e55a31f9a1988930800000000000000
+      internalID: 4145723616077174241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: high-cultist_16
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 63
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cac63b24d0b5c3b10800000000000000
+      internalID: 1962543650138451116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: high-cultist_17
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 31
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0175c1cedcc187e90800000000000000
+      internalID: -7027835547756505328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: high-cultist_18
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 0
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feb80fce232847bc0800000000000000
+      internalID: -3786258231476581393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: high-cultist_19
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 0
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bfd689109148dee0800000000000000
+      internalID: -1236166010553835595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: high-cultist_20
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 31
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6007bda28d8a606e0800000000000000
+      internalID: -1871622948740435962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: high-cultist_21
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 31
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac73a61b5624d4b20800000000000000
+      internalID: 3120223121373280202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: high-cultist_22
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 0
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 280111460da32a400800000000000000
+      internalID: 333893989085286530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: high-cultist_23
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 31
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c2f15afaa10e7680800000000000000
+      internalID: -8755558791705922877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: high-cultist_24
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 0
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6b2ef0e0a38e7ee0800000000000000
+      internalID: -1261426118624400533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: high-cultist_25
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 25
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb0550b0ecc2d6d00800000000000000
+      internalID: 967478758414307518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: high-cultist_26
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 0
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58e63d07fa18c7120800000000000000
+      internalID: 2412946090875907717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: high-cultist_27
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 0
+        width: 24
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdc0a154397c31f20800000000000000
+      internalID: 3392274379673570527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      high-cultist_0: 6284193192162437211
+      high-cultist_1: -802564067948958604
+      high-cultist_10: -7712752599115617478
+      high-cultist_11: 359344410820599361
+      high-cultist_12: -8260765428081832046
+      high-cultist_13: 1140832693818779561
+      high-cultist_14: -6140414729459620323
+      high-cultist_15: 4145723616077174241
+      high-cultist_16: 1962543650138451116
+      high-cultist_17: -7027835547756505328
+      high-cultist_18: -3786258231476581393
+      high-cultist_19: -1236166010553835595
+      high-cultist_2: -1184398665067185569
+      high-cultist_20: -1871622948740435962
+      high-cultist_21: 3120223121373280202
+      high-cultist_22: 333893989085286530
+      high-cultist_23: -8755558791705922877
+      high-cultist_24: -1261426118624400533
+      high-cultist_25: 967478758414307518
+      high-cultist_26: 2412946090875907717
+      high-cultist_27: 3392274379673570527
+      high-cultist_3: 79040410314267720
+      high-cultist_4: 7833627644892977511
+      high-cultist_5: -1672242975124098309
+      high-cultist_6: -7097510942572612525
+      high-cultist_7: -557624876333684059
+      high-cultist_8: 7071894780726987937
+      high-cultist_9: -5862492049069483389
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

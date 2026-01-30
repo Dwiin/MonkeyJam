@@ -1,0 +1,845 @@
+fileFormatVersion: 2
+guid: 84a9dd9c47d7e9644af1b1deaa747a2e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9159757749797822596
+    second: cult-crossbowman_0
+  - first:
+      213: 2070536515510877721
+    second: cult-crossbowman_1
+  - first:
+      213: -7530536415536514966
+    second: cult-crossbowman_2
+  - first:
+      213: 5596193238908649157
+    second: cult-crossbowman_3
+  - first:
+      213: 9074354537399218547
+    second: cult-crossbowman_4
+  - first:
+      213: -3298959235335055599
+    second: cult-crossbowman_5
+  - first:
+      213: 1537564209501928794
+    second: cult-crossbowman_6
+  - first:
+      213: 3161188595837310454
+    second: cult-crossbowman_7
+  - first:
+      213: -7409702706883967696
+    second: cult-crossbowman_8
+  - first:
+      213: 8453092565237874209
+    second: cult-crossbowman_9
+  - first:
+      213: -4220312282999579355
+    second: cult-crossbowman_10
+  - first:
+      213: -4328525844748523350
+    second: cult-crossbowman_11
+  - first:
+      213: -4748507514452953729
+    second: cult-crossbowman_12
+  - first:
+      213: -3694714188106180194
+    second: cult-crossbowman_13
+  - first:
+      213: -8987414103197492677
+    second: cult-crossbowman_14
+  - first:
+      213: -1983724669858830079
+    second: cult-crossbowman_15
+  - first:
+      213: 425082546326249985
+    second: cult-crossbowman_16
+  - first:
+      213: 2533326244934948678
+    second: cult-crossbowman_17
+  - first:
+      213: -6768742743950740246
+    second: cult-crossbowman_18
+  - first:
+      213: -5987875775491220193
+    second: cult-crossbowman_19
+  - first:
+      213: 4126874566871629081
+    second: cult-crossbowman_20
+  - first:
+      213: 8706038082980271493
+    second: cult-crossbowman_21
+  - first:
+      213: -4086173922492425323
+    second: cult-crossbowman_22
+  - first:
+      213: -6888013100269858551
+    second: cult-crossbowman_23
+  - first:
+      213: -8699106617915923112
+    second: cult-crossbowman_24
+  - first:
+      213: -6550448753848983415
+    second: cult-crossbowman_25
+  - first:
+      213: -5800729792491141217
+    second: cult-crossbowman_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cult-crossbowman_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 127
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 480a459942ffd1f70800000000000000
+      internalID: 9159757749797822596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-crossbowman_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 127
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91e308d9df50cbc10800000000000000
+      internalID: 2070536515510877721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-crossbowman_2
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 127
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a687dcf47092e7790800000000000000
+      internalID: -7530536415536514966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-crossbowman_3
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 127
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ceb793d91ca9ad40800000000000000
+      internalID: 5596193238908649157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-crossbowman_4
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 127
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37172afaf559eed70800000000000000
+      internalID: 9074354537399218547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-crossbowman_5
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 95
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1171c59dd0eb732d0800000000000000
+      internalID: -3298959235335055599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-crossbowman_6
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 95
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5d77be8086865510800000000000000
+      internalID: 1537564209501928794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-crossbowman_7
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 95
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f516ea774ccedb20800000000000000
+      internalID: 3161188595837310454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-crossbowman_8
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 95
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0354ee875a27b2990800000000000000
+      internalID: -7409702706883967696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-crossbowman_9
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 95
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12ebf74d6ea6f4570800000000000000
+      internalID: 8453092565237874209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-crossbowman_10
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 95
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52d979ab6507e65c0800000000000000
+      internalID: -4220312282999579355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-crossbowman_11
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 63
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa8aaae7dacfde3c0800000000000000
+      internalID: -4328525844748523350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-crossbowman_12
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 63
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7532c30399e91eb0800000000000000
+      internalID: -4748507514452953729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-crossbowman_13
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 63
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e99d557750db9bcc0800000000000000
+      internalID: -3694714188106180194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-crossbowman_14
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 63
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3ad3919d7a464380800000000000000
+      internalID: -8987414103197492677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-crossbowman_15
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 63
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 109a2e84ce46874e0800000000000000
+      internalID: -1983724669858830079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-crossbowman_16
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 63
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 102aefdd25236e500800000000000000
+      internalID: 425082546326249985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-crossbowman_17
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 31
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64795813cce282320800000000000000
+      internalID: 2533326244934948678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-crossbowman_18
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 31
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae430d236589012a0800000000000000
+      internalID: -6768742743950740246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-crossbowman_19
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 31
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1ddda215bac6eca0800000000000000
+      internalID: -5987875775491220193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-crossbowman_20
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 31
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91d3afead8a954930800000000000000
+      internalID: 4126874566871629081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-crossbowman_21
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 0
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 585df09828f02d870800000000000000
+      internalID: 8706038082980271493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-crossbowman_22
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 0
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59bdf5b877efa47c0800000000000000
+      internalID: -4086173922492425323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-crossbowman_23
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9019d2e549cd860a0800000000000000
+      internalID: -6888013100269858551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-crossbowman_24
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 0
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8552fdfee90964780800000000000000
+      internalID: -8699106617915923112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-crossbowman_25
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 0
+        width: 27
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9806e6b60912815a0800000000000000
+      internalID: -6550448753848983415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-crossbowman_26
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 0
+        width: 27
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f974a80ccfaaf7fa0800000000000000
+      internalID: -5800729792491141217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      cult-crossbowman_0: 9159757749797822596
+      cult-crossbowman_1: 2070536515510877721
+      cult-crossbowman_10: -4220312282999579355
+      cult-crossbowman_11: -4328525844748523350
+      cult-crossbowman_12: -4748507514452953729
+      cult-crossbowman_13: -3694714188106180194
+      cult-crossbowman_14: -8987414103197492677
+      cult-crossbowman_15: -1983724669858830079
+      cult-crossbowman_16: 425082546326249985
+      cult-crossbowman_17: 2533326244934948678
+      cult-crossbowman_18: -6768742743950740246
+      cult-crossbowman_19: -5987875775491220193
+      cult-crossbowman_2: -7530536415536514966
+      cult-crossbowman_20: 4126874566871629081
+      cult-crossbowman_21: 8706038082980271493
+      cult-crossbowman_22: -4086173922492425323
+      cult-crossbowman_23: -6888013100269858551
+      cult-crossbowman_24: -8699106617915923112
+      cult-crossbowman_25: -6550448753848983415
+      cult-crossbowman_26: -5800729792491141217
+      cult-crossbowman_3: 5596193238908649157
+      cult-crossbowman_4: 9074354537399218547
+      cult-crossbowman_5: -3298959235335055599
+      cult-crossbowman_6: 1537564209501928794
+      cult-crossbowman_7: 3161188595837310454
+      cult-crossbowman_8: -7409702706883967696
+      cult-crossbowman_9: 8453092565237874209
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

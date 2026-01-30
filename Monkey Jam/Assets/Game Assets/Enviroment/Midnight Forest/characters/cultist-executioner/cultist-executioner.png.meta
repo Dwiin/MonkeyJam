@@ -1,0 +1,793 @@
+fileFormatVersion: 2
+guid: c819083a97769584a802e49d8ee49b9b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5439677904557728988
+    second: cultist-executioner_0
+  - first:
+      213: -752137994966914559
+    second: cultist-executioner_1
+  - first:
+      213: -3272290998848541594
+    second: cultist-executioner_2
+  - first:
+      213: 3618105096431304583
+    second: cultist-executioner_3
+  - first:
+      213: 8343566869299388615
+    second: cultist-executioner_4
+  - first:
+      213: 5491786990079377955
+    second: cultist-executioner_5
+  - first:
+      213: 8207574497145632833
+    second: cultist-executioner_6
+  - first:
+      213: -9057047535090443414
+    second: cultist-executioner_7
+  - first:
+      213: 2150642040851784322
+    second: cultist-executioner_8
+  - first:
+      213: 4894562502809533477
+    second: cultist-executioner_9
+  - first:
+      213: 7902355749195164622
+    second: cultist-executioner_10
+  - first:
+      213: -3863322642508133862
+    second: cultist-executioner_11
+  - first:
+      213: 9057827476060443636
+    second: cultist-executioner_12
+  - first:
+      213: -6640844005274345212
+    second: cultist-executioner_13
+  - first:
+      213: -1488686544840739000
+    second: cultist-executioner_14
+  - first:
+      213: 8017707871488489457
+    second: cultist-executioner_15
+  - first:
+      213: -2260626146248977370
+    second: cultist-executioner_16
+  - first:
+      213: 6967704612730395388
+    second: cultist-executioner_17
+  - first:
+      213: 4523404587032321566
+    second: cultist-executioner_18
+  - first:
+      213: -5400430582917576646
+    second: cultist-executioner_19
+  - first:
+      213: -6704835886939956725
+    second: cultist-executioner_20
+  - first:
+      213: 7851516871951580462
+    second: cultist-executioner_21
+  - first:
+      213: 2822772077074810819
+    second: cultist-executioner_22
+  - first:
+      213: -7583338222854330445
+    second: cultist-executioner_23
+  - first:
+      213: 188033729707075376
+    second: cultist-executioner_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cultist-executioner_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 127
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42b9b4634c16284b0800000000000000
+      internalID: -5439677904557728988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cultist-executioner_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 95
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10a2ce38a7edf85f0800000000000000
+      internalID: -752137994966914559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cultist-executioner_2
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 127
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66cace38cac7692d0800000000000000
+      internalID: -3272290998848541594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cultist-executioner_3
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 127
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78f71d86a67163230800000000000000
+      internalID: 3618105096431304583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cultist-executioner_4
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 95
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c0ee4c8cdd4ac370800000000000000
+      internalID: 8343566869299388615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cultist-executioner_5
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 127
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3220bc5bb2fb63c40800000000000000
+      internalID: 5491786990079377955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cultist-executioner_6
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 95
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 148bbe1058927e170800000000000000
+      internalID: 8207574497145632833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cultist-executioner_7
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 95
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6b5b1dc047ee4280800000000000000
+      internalID: -9057047535090443414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cultist-executioner_8
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 95
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 282edf3aa8d98dd10800000000000000
+      internalID: 2150642040851784322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cultist-executioner_9
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 95
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52cb8eee9aafce340800000000000000
+      internalID: 4894562502809533477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cultist-executioner_10
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 63
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecb2b877faecaad60800000000000000
+      internalID: 7902355749195164622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cultist-executioner_11
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 63
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1a44908688b26ac0800000000000000
+      internalID: -3863322642508133862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cultist-executioner_12
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 63
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f31b5b591ed3bd70800000000000000
+      internalID: 9057827476060443636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cultist-executioner_13
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 63
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40127d8df8bf6d3a0800000000000000
+      internalID: -6640844005274345212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cultist-executioner_14
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 63
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8473dd0997f175be0800000000000000
+      internalID: -1488686544840739000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cultist-executioner_15
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 31
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f7bce854de944f60800000000000000
+      internalID: 8017707871488489457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cultist-executioner_16
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 31
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6249ede4f74a0a0e0800000000000000
+      internalID: -2260626146248977370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cultist-executioner_17
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 31
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfa55a5cd6242b060800000000000000
+      internalID: 6967704612730395388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cultist-executioner_18
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 31
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1e1f61818c56ce30800000000000000
+      internalID: 4523404587032321566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cultist-executioner_19
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a38ca0f5ff0dd05b0800000000000000
+      internalID: -5400430582917576646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cultist-executioner_20
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 0
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0a17a9d843a3f2a0800000000000000
+      internalID: -6704835886939956725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cultist-executioner_21
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 0
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2df8a4fef036fc60800000000000000
+      internalID: 7851516871951580462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cultist-executioner_22
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 0
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c78fe79f308c2720800000000000000
+      internalID: 2822772077074810819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cultist-executioner_23
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 0
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b72027801292c690800000000000000
+      internalID: -7583338222854330445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cultist-executioner_24
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 0
+        width: 31
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0376bf05ea70c9200800000000000000
+      internalID: 188033729707075376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      cultist-executioner_0: -5439677904557728988
+      cultist-executioner_1: -752137994966914559
+      cultist-executioner_10: 7902355749195164622
+      cultist-executioner_11: -3863322642508133862
+      cultist-executioner_12: 9057827476060443636
+      cultist-executioner_13: -6640844005274345212
+      cultist-executioner_14: -1488686544840739000
+      cultist-executioner_15: 8017707871488489457
+      cultist-executioner_16: -2260626146248977370
+      cultist-executioner_17: 6967704612730395388
+      cultist-executioner_18: 4523404587032321566
+      cultist-executioner_19: -5400430582917576646
+      cultist-executioner_2: -3272290998848541594
+      cultist-executioner_20: -6704835886939956725
+      cultist-executioner_21: 7851516871951580462
+      cultist-executioner_22: 2822772077074810819
+      cultist-executioner_23: -7583338222854330445
+      cultist-executioner_24: 188033729707075376
+      cultist-executioner_3: 3618105096431304583
+      cultist-executioner_4: 8343566869299388615
+      cultist-executioner_5: 5491786990079377955
+      cultist-executioner_6: 8207574497145632833
+      cultist-executioner_7: -9057047535090443414
+      cultist-executioner_8: 2150642040851784322
+      cultist-executioner_9: 4894562502809533477
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

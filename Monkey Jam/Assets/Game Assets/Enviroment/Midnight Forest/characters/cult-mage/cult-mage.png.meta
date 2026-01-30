@@ -1,0 +1,871 @@
+fileFormatVersion: 2
+guid: 570281b23c6de974090cd616a5d4f21d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2975223017334435895
+    second: cult-mage_0
+  - first:
+      213: -4544322867769540545
+    second: cult-mage_1
+  - first:
+      213: -153632171228474705
+    second: cult-mage_2
+  - first:
+      213: -1169865577148695939
+    second: cult-mage_3
+  - first:
+      213: 8785819025341432172
+    second: cult-mage_4
+  - first:
+      213: 1034573004124770759
+    second: cult-mage_5
+  - first:
+      213: -1536443749405014166
+    second: cult-mage_6
+  - first:
+      213: 1419845331418057072
+    second: cult-mage_7
+  - first:
+      213: -4096842672407927341
+    second: cult-mage_8
+  - first:
+      213: 2522435306962028021
+    second: cult-mage_9
+  - first:
+      213: -7663352269956876239
+    second: cult-mage_10
+  - first:
+      213: 5784046815812352540
+    second: cult-mage_11
+  - first:
+      213: -3257023654602601503
+    second: cult-mage_12
+  - first:
+      213: 3697356181761189064
+    second: cult-mage_13
+  - first:
+      213: 6212816844051852221
+    second: cult-mage_14
+  - first:
+      213: 3016616868898896954
+    second: cult-mage_15
+  - first:
+      213: -3063042392754696132
+    second: cult-mage_16
+  - first:
+      213: -1910983016546633936
+    second: cult-mage_17
+  - first:
+      213: 2958550542162075119
+    second: cult-mage_18
+  - first:
+      213: 1600173233879628717
+    second: cult-mage_19
+  - first:
+      213: -6927342819304988197
+    second: cult-mage_20
+  - first:
+      213: 787249699532887888
+    second: cult-mage_21
+  - first:
+      213: -717921048334329477
+    second: cult-mage_22
+  - first:
+      213: -945898208707888504
+    second: cult-mage_23
+  - first:
+      213: -4814044810546657843
+    second: cult-mage_24
+  - first:
+      213: 7142299201009333787
+    second: cult-mage_25
+  - first:
+      213: -240235467835214588
+    second: cult-mage_26
+  - first:
+      213: -7900366483538826921
+    second: cult-mage_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cult-mage_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 127
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cf073cdd62e5b6d0800000000000000
+      internalID: -2975223017334435895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-mage_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 127
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3089e9bd625fe0c0800000000000000
+      internalID: -4544322867769540545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-mage_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 127
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa2dadfaa503eddf0800000000000000
+      internalID: -153632171228474705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-mage_3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 127
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7a381fa47dc3cfe0800000000000000
+      internalID: -1169865577148695939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-mage_4
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 127
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c614852badf7de970800000000000000
+      internalID: 8785819025341432172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-mage_5
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 95
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c1d0157aaa8b5e00800000000000000
+      internalID: 1034573004124770759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-mage_6
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 95
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a674853ec847daae0800000000000000
+      internalID: -1536443749405014166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-mage_7
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 95
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0798b276ecd44b310800000000000000
+      internalID: 1419845331418057072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-mage_8
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 95
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d5a672ab471527c0800000000000000
+      internalID: -4096842672407927341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-mage_9
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 95
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f500681c8d710320800000000000000
+      internalID: 2522435306962028021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-mage_10
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 95
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 138798076bd46a590800000000000000
+      internalID: -7663352269956876239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-mage_11
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 63
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1a79bc0fef054050800000000000000
+      internalID: 5784046815812352540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-mage_12
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 63
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1eb0e5a1e3abcc2d0800000000000000
+      internalID: -3257023654602601503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-mage_13
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 63
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c468fd9bd5af4330800000000000000
+      internalID: 3697356181761189064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-mage_14
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 63
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbb2644b00c583650800000000000000
+      internalID: 6212816844051852221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-mage_15
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 63
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3c7b2e3f0d2dd920800000000000000
+      internalID: 3016616868898896954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-mage_16
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 63
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c30d4e72c23ed75d0800000000000000
+      internalID: -3063042392754696132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-mage_17
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 63
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 037feee3213da75e0800000000000000
+      internalID: -1910983016546633936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-mage_18
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 31
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fed1c930b02ee0920800000000000000
+      internalID: 2958550542162075119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-mage_19
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 31
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dabbb700415f43610800000000000000
+      internalID: 1600173233879628717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-mage_20
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 31
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd129f198622ddf90800000000000000
+      internalID: -6927342819304988197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-mage_21
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 31
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 057d0324e6fdcea00800000000000000
+      internalID: 787249699532887888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-mage_22
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7991493c9e6906f0800000000000000
+      internalID: -717921048334329477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-mage_23
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 0
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88ab94c379e7fd2f0800000000000000
+      internalID: -945898208707888504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-mage_24
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 0
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc5cd8e20c3113db0800000000000000
+      internalID: -4814044810546657843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-mage_25
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b16b7b3284b8e1360800000000000000
+      internalID: 7142299201009333787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-mage_26
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 0
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4057b356d138aacf0800000000000000
+      internalID: -240235467835214588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cult-mage_27
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 0
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75924498a824c5290800000000000000
+      internalID: -7900366483538826921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      cult-mage_0: -2975223017334435895
+      cult-mage_1: -4544322867769540545
+      cult-mage_10: -7663352269956876239
+      cult-mage_11: 5784046815812352540
+      cult-mage_12: -3257023654602601503
+      cult-mage_13: 3697356181761189064
+      cult-mage_14: 6212816844051852221
+      cult-mage_15: 3016616868898896954
+      cult-mage_16: -3063042392754696132
+      cult-mage_17: -1910983016546633936
+      cult-mage_18: 2958550542162075119
+      cult-mage_19: 1600173233879628717
+      cult-mage_2: -153632171228474705
+      cult-mage_20: -6927342819304988197
+      cult-mage_21: 787249699532887888
+      cult-mage_22: -717921048334329477
+      cult-mage_23: -945898208707888504
+      cult-mage_24: -4814044810546657843
+      cult-mage_25: 7142299201009333787
+      cult-mage_26: -240235467835214588
+      cult-mage_27: -7900366483538826921
+      cult-mage_3: -1169865577148695939
+      cult-mage_4: 8785819025341432172
+      cult-mage_5: 1034573004124770759
+      cult-mage_6: -1536443749405014166
+      cult-mage_7: 1419845331418057072
+      cult-mage_8: -4096842672407927341
+      cult-mage_9: 2522435306962028021
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
