@@ -14,9 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MonkeyJam.Entities.EnemyData
   Name: Bob
   Stats:
-    MaxHealth: 0
-    MoveSpeed: 2
+    MaxHealth: 5
+    MoveSpeed: 20
     Armour: 0
     Health: 0
     Resistances: []
   AnimationController: {fileID: 9100000, guid: 8a0ee7e2feb80d341ba2c500deba0039, type: 2}
+  Attacks:
+  - Cooldown: 1
+    Damage: 3
+    DamageType: 0
+  - Cooldown: 2
+    Damage: 5
+    DamageType: 0
