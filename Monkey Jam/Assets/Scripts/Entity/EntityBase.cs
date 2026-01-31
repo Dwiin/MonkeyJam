@@ -24,15 +24,15 @@ namespace MonkeyJam.Entities {
         [SerializeField] protected EntityStats _stats;
         [SerializeField] protected Rigidbody2D _rb;
         [SerializeField] protected Animator _animator;
-        [SerializeField] private Collider2D[] _attackColliders;
+        [SerializeField] protected Collider2D[] _attackColliders;
+        [field: SerializeField] public EnemyData Data { get; private set; }
 
         public ResistanceData[] GetResistances() {
             return _stats.Resistances;
         }
 
-        public void TakeDamage(int amount, EntityBase source = null) {
+        public virtual void TakeDamage(int amount, EntityBase source = null) {
             Debug.Log("Oof");
-           
         }
 
         /// <summary>
@@ -62,6 +62,7 @@ namespace MonkeyJam.Entities {
             //_attackCollider.offset = new Vector2(x * 0.5f, 0);
             //_attackCollider.enabled = true;
             #endregion
+            if (Data.Attacks[colliderIndex].IsRanged) return; // Fire projectile
             _attackColliders[colliderIndex].enabled = true;
         }
 
