@@ -12,6 +12,8 @@ namespace MonkeyJam.Entities
 
             _rb = GetComponent<Rigidbody2D>();
             Debug.Log(wayPoint1.position);
+
+            
         }
 
         private void Update()

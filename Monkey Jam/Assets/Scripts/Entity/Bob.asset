@@ -15,9 +15,8 @@ MonoBehaviour:
   Name: Bob
   Stats:
     MaxHealth: 0
-    MoveSpeed: 0
+    MoveSpeed: 2
     Armour: 0
     Health: 0
     Resistances: []
-  BaseSpriteSheet: {fileID: 0}
   AnimationController: {fileID: 0}
