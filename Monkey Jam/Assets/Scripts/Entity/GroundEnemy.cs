@@ -29,6 +29,7 @@ namespace MonkeyJam.Entities
             else { _animator.SetBool("isRunning", false); }
 
             RaycastCheck();
+            if (isChasing) { Chasing(); }
         }
 
         private void MoveToWayPoint(Transform currentPoint)
@@ -77,7 +78,7 @@ namespace MonkeyJam.Entities
 
         private void RaycastCheck()
         {
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, facingDirection, 5.0f, mask);
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, facingDirection, detectRange, mask);
             if (hit)
             {
                 isPatroling = false;
@@ -92,7 +93,11 @@ namespace MonkeyJam.Entities
 
         private void Chasing()
         {
-
+            RaycastHit2D attack = Physics2D.Raycast(transform.position, facingDirection, attackRange);
+            if (attack)
+            {
+                Debug.Log("Attack");
+            }
         }
     }
 }

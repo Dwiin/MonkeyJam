@@ -330,7 +330,6 @@ GameObject:
   - component: {fileID: 906856354}
   - component: {fileID: 906856353}
   - component: {fileID: 906856352}
-  - component: {fileID: 906856356}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -358,6 +357,7 @@ MonoBehaviour:
     Resistances: []
   _rb: {fileID: 0}
   _animator: {fileID: 906856353}
+  _attackCollider: {fileID: 0}
   _toPosess: {fileID: 1058093036}
 --- !u!95 &906856353
 Animator:
@@ -450,47 +450,11 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.48, y: -3.55, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &906856356
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 906856351}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
 --- !u!1 &989180876
 GameObject:
   m_ObjectHideFlags: 0
@@ -614,10 +578,13 @@ MonoBehaviour:
     Resistances: []
   _rb: {fileID: 0}
   _animator: {fileID: 0}
+  _attackCollider: {fileID: 0}
   isPatroling: 1
   waypoints:
   - {fileID: 532543566}
   - {fileID: 771013655}
+  attackRange: 2
+  detectRange: 5
   <Data>k__BackingField: {fileID: 11400000, guid: 5a9dc2624c31e2247bb42e5f5da8ad10, type: 2}
   mask:
     serializedVersion: 2
@@ -831,10 +798,13 @@ MonoBehaviour:
     Resistances: []
   _rb: {fileID: 0}
   _animator: {fileID: 0}
+  _attackCollider: {fileID: 0}
   isPatroling: 1
   waypoints:
   - {fileID: 1052358428}
   - {fileID: 989180877}
+  attackRange: 0
+  detectRange: 0
   <Data>k__BackingField: {fileID: 11400000, guid: 5a9dc2624c31e2247bb42e5f5da8ad10, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

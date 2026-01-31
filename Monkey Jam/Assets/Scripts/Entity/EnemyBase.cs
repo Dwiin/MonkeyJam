@@ -9,7 +9,8 @@ namespace MonkeyJam.Entities
         [SerializeField] protected Transform[] waypoints;
 
 
-        [Range(0f,7.5f), SerializeField] protected float attackRange;
+        [Range(0f,10f), SerializeField] protected float attackRange;
+        [Range(0f, 10f), SerializeField] protected float detectRange;
 
         [field: SerializeField] public EnemyData Data { get; private set; }
 
@@ -17,6 +18,9 @@ namespace MonkeyJam.Entities
         {
             Gizmos.color = Color.green;
             Gizmos.DrawWireSphere(transform.position, attackRange);
+            Vector3 detectRangeVec = transform.position;
+            detectRangeVec.x += detectRange;
+            Gizmos.DrawLine(transform.position, detectRangeVec);
         }
     }
 }
