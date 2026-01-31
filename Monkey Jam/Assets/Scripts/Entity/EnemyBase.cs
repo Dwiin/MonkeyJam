@@ -12,7 +12,7 @@ namespace MonkeyJam.Entities
         [Range(0f,10f), SerializeField] protected float attackRange;
         [Range(0f, 10f), SerializeField] protected float detectRange;
 
-        [field: SerializeField] public EnemyData Data { get; private set; }
+        //[field: SerializeField] public EnemyData Data { get; private set; }
 
         public override void TakeDamage(int amount, EntityBase source = null) {
             _stats.Health -= amount;
