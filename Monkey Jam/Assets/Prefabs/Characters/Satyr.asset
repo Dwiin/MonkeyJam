@@ -10,20 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ccc9e76484382384c87ac94f058b211d, type: 3}
-  m_Name: Bob
+  m_Name: Satyr
   m_EditorClassIdentifier: Assembly-CSharp::MonkeyJam.Entities.EnemyData
-  Name: Bob
+  Name: Satyr
   Stats:
-    MaxHealth: 5
-    MoveSpeed: 20
+    MaxHealth: 3
+    MoveSpeed: 15
     Armour: 0
     Health: 0
     Resistances: []
-  AnimationController: {fileID: 9100000, guid: 8a0ee7e2feb80d341ba2c500deba0039, type: 2}
-  Attacks:
-  - Cooldown: 1
-    Damage: 3
-    DamageType: 0
-  - Cooldown: 2
-    Damage: 5
-    DamageType: 0
+  AnimationController: {fileID: 9100000, guid: a2f344819be64d4438a8624eb775387e, type: 2}
+  Attacks: []

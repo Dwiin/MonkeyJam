@@ -268,6 +268,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoatMan
       objectReference: {fileID: 0}
+    - target: {fileID: 3662155912979499755, guid: 292f37df387598742b5e01f605f0be06, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6656658978330895506, guid: 292f37df387598742b5e01f605f0be06, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.52
@@ -365,6 +369,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Base Archer
       objectReference: {fileID: 0}
+    - target: {fileID: 5559683185002862067, guid: 462d7e91f55000b4aafcbdc9f350be0b, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -378,6 +386,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 554720364488689619, guid: 0647fdadfa95b324bbea8288ff37575b, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 897389011641299800, guid: 0647fdadfa95b324bbea8288ff37575b, type: 3}
       propertyPath: m_Name
       value: Evil Wizard
@@ -479,6 +491,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8096836579351574776, guid: 250a71a4a95a7ca47a1e2cebb828097f, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -534,6 +550,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1188381637457332180, guid: f125098e7c89ca84bb69d25c610c0f39, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741292400921796336, guid: f125098e7c89ca84bb69d25c610c0f39, type: 3}
+      propertyPath: waypoints.Array.size
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -606,6 +626,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2655560653796315473, guid: 19d5bca46539edd4bbf1240da74fa8fc, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2918357746445692015, guid: 19d5bca46539edd4bbf1240da74fa8fc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.63
@@ -663,6 +687,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5909639378434541564, guid: 67dfb42d00ddefd4a8e5e1a56806f0cb, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7407012279897250254, guid: 67dfb42d00ddefd4a8e5e1a56806f0cb, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.54

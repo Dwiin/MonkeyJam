@@ -26,7 +26,10 @@ namespace MonkeyJam.Entities
 
         private void Update()
         {
-            
+            if(waypoints.Length == 0)
+            {
+                return;
+            }
             if (isPatroling) { MoveToWayPoint(waypoints[wayPointIndex]); }
             else { _animator.SetBool("isRunning", false); }
 
