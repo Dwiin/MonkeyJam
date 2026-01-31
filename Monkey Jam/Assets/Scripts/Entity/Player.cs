@@ -19,6 +19,7 @@ namespace MonkeyJam.Entities {
         [SerializeField] private float _jumpFreezeTime = 0.1f;
         [SerializeField] private float _groundCheckLength = 0.5f;
         [SerializeField] private LayerMask _groundLayer;
+        [SerializeField] private Transform _groundCheckPoint;
 
         private InputSystem_Actions _controls;
         private Vector2 _moveVector;
@@ -35,7 +36,11 @@ namespace MonkeyJam.Entities {
                 _spriteRenderer = GetComponent<SpriteRenderer>();
             }
             _onCooldown = new List<AttackData>();
-            SetupStats(Data.Stats);
+            //SetupStats(Data.Stats);
+            Posess(Data);
+            foreach (Collider2D coll in _attackColliders) {
+                coll.enabled = false;
+            }
         }
 
         private void OnEnable() {
@@ -56,6 +61,7 @@ namespace MonkeyJam.Entities {
         }
 
         private void OnAttack(InputAction.CallbackContext context) {
+            if (Data.Attacks == null || Data.Attacks.Length == 0) return;
             if (_onCooldown.Contains(Data.Attacks[0])) return;
             _currentAttack = Data.Attacks[0];
             _animator.SetInteger("attackIndex", 0);
@@ -65,6 +71,7 @@ namespace MonkeyJam.Entities {
         }
 
         private void OnSecondary(InputAction.CallbackContext context) {
+            if (Data.Attacks == null || Data.Attacks.Length == 0) return;
             if (_onCooldown.Contains(Data.Attacks[1])) return;
             _currentAttack = Data.Attacks[1];
             _animator.SetInteger("attackIndex", 1);
@@ -80,10 +87,10 @@ namespace MonkeyJam.Entities {
             _currentJumpTime = 0f;
         }
         
-        public void Posess(EnemyBase enemy)
+        public void Posess(EnemyData data)
         {
-            SetupStats(enemy.Data.Stats); 
-            _animator.runtimeAnimatorController = enemy.Data.AnimationController;
+            SetupStats(data.Stats); 
+            _animator.runtimeAnimatorController = data.AnimationController;
         }
 
         private void Update() {
@@ -139,11 +146,11 @@ namespace MonkeyJam.Entities {
             _onCooldown.Remove(data);
         }
 
-        private bool IsGrounded() => Physics2D.Raycast(transform.position, Vector3.down, _groundCheckLength, _groundLayer);
+        private bool IsGrounded() => Physics2D.Raycast(_groundCheckPoint.position, Vector3.down, _groundCheckLength, _groundLayer);
 
         private void OnDrawGizmosSelected() {
             Gizmos.color = Color.green;
-            Gizmos.DrawRay(transform.position, Vector3.down * _groundCheckLength);
+            Gizmos.DrawRay(_groundCheckPoint.position, Vector3.down * _groundCheckLength);
         }
     }
 }
