@@ -19,7 +19,8 @@ namespace MonkeyJam.Entities
             Gizmos.color = Color.green;
             Gizmos.DrawWireSphere(transform.position, attackRange);
             Vector3 detectRangeVec = transform.position;
-            detectRangeVec.x += detectRange;
+            //detectRangeVec.x += detectRange;
+            detectRangeVec.y -= detectRange;
             Gizmos.DrawLine(transform.position, detectRangeVec);
         }
     }
