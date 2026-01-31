@@ -136,11 +136,12 @@ MonoBehaviour:
   _rb: {fileID: 0}
   _animator: {fileID: 3400888699603250495}
   _attackColliders: []
+  <Data>k__BackingField: {fileID: 11400000, guid: 975a753cf699b5a41827e1c3267278fa, type: 2}
   isPatroling: 0
   waypoints: []
   attackRange: 0
   detectRange: 0
-  <Data>k__BackingField: {fileID: 11400000, guid: 5a9dc2624c31e2247bb42e5f5da8ad10, type: 2}
+  _attackDelay: 5
   mask:
     serializedVersion: 2
     m_Bits: 64
