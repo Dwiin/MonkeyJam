@@ -142,7 +142,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -156,7 +156,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 15
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -234,12 +234,12 @@ TextureImporter:
       name: goatman_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 447
-        width: 41
-        height: 50
+        x: 0
+        y: 448
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -256,12 +256,12 @@ TextureImporter:
       name: goatman_1
       rect:
         serializedVersion: 2
-        x: 81
-        y: 447
-        width: 41
-        height: 51
+        x: 64
+        y: 448
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -278,12 +278,12 @@ TextureImporter:
       name: goatman_2
       rect:
         serializedVersion: 2
-        x: 145
-        y: 447
-        width: 41
-        height: 52
+        x: 128
+        y: 448
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -300,12 +300,12 @@ TextureImporter:
       name: goatman_3
       rect:
         serializedVersion: 2
-        x: 209
-        y: 447
-        width: 41
-        height: 51
+        x: 192
+        y: 448
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -322,12 +322,12 @@ TextureImporter:
       name: goatman_4
       rect:
         serializedVersion: 2
-        x: 273
-        y: 447
-        width: 41
-        height: 50
+        x: 256
+        y: 448
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -344,12 +344,12 @@ TextureImporter:
       name: goatman_5
       rect:
         serializedVersion: 2
-        x: 7
-        y: 383
-        width: 33
-        height: 61
+        x: 0
+        y: 384
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -366,12 +366,12 @@ TextureImporter:
       name: goatman_6
       rect:
         serializedVersion: 2
-        x: 75
-        y: 383
-        width: 29
-        height: 54
+        x: 64
+        y: 384
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -388,12 +388,12 @@ TextureImporter:
       name: goatman_7
       rect:
         serializedVersion: 2
-        x: 141
-        y: 383
-        width: 29
-        height: 47
+        x: 128
+        y: 384
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -410,12 +410,12 @@ TextureImporter:
       name: goatman_8
       rect:
         serializedVersion: 2
-        x: 207
-        y: 383
-        width: 49
-        height: 44
+        x: 192
+        y: 384
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -432,12 +432,12 @@ TextureImporter:
       name: goatman_9
       rect:
         serializedVersion: 2
-        x: 271
-        y: 383
-        width: 49
-        height: 44
+        x: 256
+        y: 384
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -454,12 +454,12 @@ TextureImporter:
       name: goatman_10
       rect:
         serializedVersion: 2
-        x: 335
-        y: 383
-        width: 49
-        height: 44
+        x: 320
+        y: 384
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -476,12 +476,12 @@ TextureImporter:
       name: goatman_11
       rect:
         serializedVersion: 2
-        x: 20
-        y: 319
-        width: 42
-        height: 52
+        x: 0
+        y: 320
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -498,12 +498,12 @@ TextureImporter:
       name: goatman_12
       rect:
         serializedVersion: 2
-        x: 78
+        x: 64
         y: 320
-        width: 51
-        height: 52
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -520,12 +520,12 @@ TextureImporter:
       name: goatman_13
       rect:
         serializedVersion: 2
-        x: 142
-        y: 322
-        width: 39
-        height: 49
+        x: 128
+        y: 320
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -542,12 +542,12 @@ TextureImporter:
       name: goatman_14
       rect:
         serializedVersion: 2
-        x: 209
-        y: 319
-        width: 34
-        height: 51
+        x: 192
+        y: 320
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -564,12 +564,12 @@ TextureImporter:
       name: goatman_15
       rect:
         serializedVersion: 2
-        x: 282
-        y: 319
-        width: 32
-        height: 51
+        x: 256
+        y: 320
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -586,12 +586,12 @@ TextureImporter:
       name: goatman_16
       rect:
         serializedVersion: 2
-        x: 338
-        y: 319
-        width: 34
-        height: 52
+        x: 320
+        y: 320
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -608,12 +608,12 @@ TextureImporter:
       name: goatman_17
       rect:
         serializedVersion: 2
-        x: 16
+        x: 0
         y: 256
-        width: 36
-        height: 52
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -630,12 +630,12 @@ TextureImporter:
       name: goatman_18
       rect:
         serializedVersion: 2
-        x: 78
-        y: 258
-        width: 39
-        height: 49
+        x: 64
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -652,12 +652,12 @@ TextureImporter:
       name: goatman_19
       rect:
         serializedVersion: 2
-        x: 146
-        y: 255
-        width: 38
-        height: 51
+        x: 128
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -674,12 +674,12 @@ TextureImporter:
       name: goatman_20
       rect:
         serializedVersion: 2
-        x: 217
-        y: 255
-        width: 33
-        height: 51
+        x: 192
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -696,12 +696,12 @@ TextureImporter:
       name: goatman_21
       rect:
         serializedVersion: 2
-        x: 17
-        y: 191
-        width: 46
-        height: 42
+        x: 0
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -718,12 +718,12 @@ TextureImporter:
       name: goatman_22
       rect:
         serializedVersion: 2
-        x: 75
-        y: 191
-        width: 53
-        height: 43
+        x: 64
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -740,12 +740,12 @@ TextureImporter:
       name: goatman_23
       rect:
         serializedVersion: 2
-        x: 138
-        y: 193
-        width: 53
-        height: 40
+        x: 128
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -762,12 +762,12 @@ TextureImporter:
       name: goatman_24
       rect:
         serializedVersion: 2
-        x: 206
-        y: 191
-        width: 49
-        height: 41
+        x: 192
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -784,12 +784,12 @@ TextureImporter:
       name: goatman_25
       rect:
         serializedVersion: 2
-        x: 277
-        y: 191
-        width: 42
-        height: 41
+        x: 256
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -806,12 +806,12 @@ TextureImporter:
       name: goatman_26
       rect:
         serializedVersion: 2
-        x: 337
-        y: 191
-        width: 46
-        height: 42
+        x: 320
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -828,12 +828,12 @@ TextureImporter:
       name: goatman_27
       rect:
         serializedVersion: 2
-        x: 15
+        x: 0
         y: 128
-        width: 49
-        height: 42
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -850,12 +850,12 @@ TextureImporter:
       name: goatman_28
       rect:
         serializedVersion: 2
-        x: 77
-        y: 130
-        width: 51
-        height: 39
+        x: 64
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -872,12 +872,12 @@ TextureImporter:
       name: goatman_29
       rect:
         serializedVersion: 2
-        x: 144
-        y: 127
-        width: 47
-        height: 41
+        x: 128
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -894,12 +894,12 @@ TextureImporter:
       name: goatman_30
       rect:
         serializedVersion: 2
-        x: 213
-        y: 127
-        width: 42
-        height: 41
+        x: 192
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -916,12 +916,12 @@ TextureImporter:
       name: goatman_31
       rect:
         serializedVersion: 2
-        x: 13
-        y: 63
-        width: 52
-        height: 52
+        x: 0
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -938,12 +938,12 @@ TextureImporter:
       name: goatman_32
       rect:
         serializedVersion: 2
-        x: 76
-        y: 65
-        width: 49
-        height: 49
+        x: 64
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -960,12 +960,12 @@ TextureImporter:
       name: goatman_33
       rect:
         serializedVersion: 2
-        x: 12
+        x: 0
         y: 0
-        width: 48
-        height: 50
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -982,12 +982,12 @@ TextureImporter:
       name: goatman_34
       rect:
         serializedVersion: 2
-        x: 75
+        x: 64
         y: 0
-        width: 48
-        height: 50
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1004,12 +1004,12 @@ TextureImporter:
       name: goatman_35
       rect:
         serializedVersion: 2
-        x: 140
+        x: 128
         y: 0
-        width: 48
-        height: 50
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1026,7 +1026,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0207692195cb90f4aa15d16501fe99b9
     internalID: 0
     vertices: []
     indices: 
@@ -1034,7 +1034,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":8.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       goatman_0: -4315314339219698924
       goatman_1: 5265918785495906022
