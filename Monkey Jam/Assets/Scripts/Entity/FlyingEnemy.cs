@@ -4,9 +4,10 @@ using UnityEngine;
 
 namespace MonkeyJam.Entities
 {
-    public class GroundEnemy : EnemyBase
+    public class FlyingEnemy : EnemyBase
     {
         int wayPointIndex;
+        int flyingPoint;
 
         private void Start()
         {
@@ -16,12 +17,11 @@ namespace MonkeyJam.Entities
             _animator = GetComponent<Animator>();
 
             wayPointIndex = 0;
-
         }
 
         private void Update()
         {
-            if (isPatroling) { MoveToWayPoint(waypoints[wayPointIndex]); }
+            if (isPatroling) { MoveToWayPoint(waypoints[wayPointIndex]); }            
             else { _animator.SetBool("isRunning", false); }
         }
 
