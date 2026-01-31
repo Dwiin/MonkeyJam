@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1599104249144521850}
   - component: {fileID: 4707489864283203447}
   - component: {fileID: 554720364488689619}
+  - component: {fileID: 6136876217318227798}
   m_Layer: 0
   m_Name: Evil Wizard
   m_TagString: Untagged
@@ -135,12 +136,49 @@ MonoBehaviour:
     Resistances: []
   _rb: {fileID: 0}
   _animator: {fileID: 4707489864283203447}
-  _attackColliders: []
+  _attackColliders:
+  - {fileID: 6136876217318227798}
   isPatroling: 0
   waypoints: []
   attackRange: 0
-  detectRange: 0
+  detectRange: 9.24
   <Data>k__BackingField: {fileID: 11400000, guid: 5a9dc2624c31e2247bb42e5f5da8ad10, type: 2}
   mask:
     serializedVersion: 2
     m_Bits: 64
+--- !u!58 &6136876217318227798
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897389011641299800}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 2.9013934, y: 0.620224}
+  m_Radius: 3.0017028

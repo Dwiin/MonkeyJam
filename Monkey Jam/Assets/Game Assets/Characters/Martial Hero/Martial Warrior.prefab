@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1911270525669982766}
   - component: {fileID: 6227770942716760420}
   - component: {fileID: 4747610900905376368}
+  - component: {fileID: 1819151649307225168}
   m_Layer: 0
   m_Name: Martial Warrior
   m_TagString: Untagged
@@ -43,7 +44,7 @@ Animator:
   m_GameObject: {fileID: 483220885686537926}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e355c2d1c82ff5f4fb60a5c42e096695, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2b5733374e5a8fb4c888e422edae187a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -114,3 +115,32 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1819151649307225168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483220885686537926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73798dba1f194a079c4caf87c67da191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonkeyJam.Entities.GroundEnemy
+  _stats:
+    MaxHealth: 0
+    MoveSpeed: 0
+    Armour: 0
+    Health: 0
+    Resistances: []
+  _rb: {fileID: 0}
+  _animator: {fileID: 0}
+  _attackColliders: []
+  isPatroling: 0
+  waypoints: []
+  attackRange: 0
+  detectRange: 0
+  <Data>k__BackingField: {fileID: 0}
+  mask:
+    serializedVersion: 2
+    m_Bits: 0

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 50355282552793908}
   - component: {fileID: 5835162202641725087}
   - component: {fileID: 9051204839788286074}
+  - component: {fileID: 1717072961050608070}
   m_Layer: 0
   m_Name: Arcane Archer
   m_TagString: Untagged
@@ -161,3 +162,32 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.345152, y: 2.2961783}
   m_EdgeRadius: 0
+--- !u!114 &1717072961050608070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9158143649520464148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73798dba1f194a079c4caf87c67da191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonkeyJam.Entities.GroundEnemy
+  _stats:
+    MaxHealth: 0
+    MoveSpeed: 0
+    Armour: 0
+    Health: 0
+    Resistances: []
+  _rb: {fileID: 0}
+  _animator: {fileID: 0}
+  _attackColliders: []
+  isPatroling: 0
+  waypoints: []
+  attackRange: 0
+  detectRange: 0
+  <Data>k__BackingField: {fileID: 0}
+  mask:
+    serializedVersion: 2
+    m_Bits: 0

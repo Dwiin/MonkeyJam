@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3423303333740318473}
   - component: {fileID: 3624950974833326858}
   - component: {fileID: 5769511214125260412}
+  - component: {fileID: 8371665442723767023}
   m_Layer: 0
   m_Name: Gobbo
   m_TagString: Untagged
@@ -102,7 +103,7 @@ Animator:
   m_GameObject: {fileID: 5087034407074334388}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: cc4d232cdd6ab634e8c13c3afe152333, type: 2}
+  m_Controller: {fileID: 9100000, guid: f0cf6c8a2d2946f42b81ff695ccdd199, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -114,3 +115,32 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8371665442723767023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5087034407074334388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73798dba1f194a079c4caf87c67da191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonkeyJam.Entities.GroundEnemy
+  _stats:
+    MaxHealth: 0
+    MoveSpeed: 0
+    Armour: 0
+    Health: 0
+    Resistances: []
+  _rb: {fileID: 0}
+  _animator: {fileID: 0}
+  _attackColliders: []
+  isPatroling: 0
+  waypoints: []
+  attackRange: 0
+  detectRange: 0
+  <Data>k__BackingField: {fileID: 0}
+  mask:
+    serializedVersion: 2
+    m_Bits: 0

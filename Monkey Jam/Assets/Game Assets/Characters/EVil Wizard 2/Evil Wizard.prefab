@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3516539001549875264}
   - component: {fileID: 3077666612557808556}
   - component: {fileID: -4667623214194641650}
+  - component: {fileID: 2041093044693696587}
   m_Layer: 0
   m_Name: Evil Wizard
   m_TagString: Untagged
@@ -102,7 +103,7 @@ Animator:
   m_GameObject: {fileID: 2174759647671551927}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8a0ee7e2feb80d341ba2c500deba0039, type: 2}
+  m_Controller: {fileID: 9100000, guid: f30bacb1c9e005d40aa973b1942f95e5, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -114,3 +115,32 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2041093044693696587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2174759647671551927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73798dba1f194a079c4caf87c67da191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonkeyJam.Entities.GroundEnemy
+  _stats:
+    MaxHealth: 0
+    MoveSpeed: 0
+    Armour: 0
+    Health: 0
+    Resistances: []
+  _rb: {fileID: 0}
+  _animator: {fileID: 0}
+  _attackColliders: []
+  isPatroling: 0
+  waypoints: []
+  attackRange: 0
+  detectRange: 0
+  <Data>k__BackingField: {fileID: 0}
+  mask:
+    serializedVersion: 2
+    m_Bits: 0

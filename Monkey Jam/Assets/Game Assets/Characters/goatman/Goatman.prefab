@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4426484314895574256}
   - component: {fileID: 553553089491846272}
   - component: {fileID: 8064430715069880973}
+  - component: {fileID: 303101779645200921}
   m_Layer: 0
   m_Name: Goatman
   m_TagString: Untagged
@@ -102,7 +103,7 @@ Animator:
   m_GameObject: {fileID: 5569911464967620773}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ce3d8e301f5f9e545aadf43a7ae98535, type: 2}
+  m_Controller: {fileID: 9100000, guid: a23030ba7d748fe4baab2ec88731328a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -114,3 +115,32 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &303101779645200921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5569911464967620773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73798dba1f194a079c4caf87c67da191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonkeyJam.Entities.GroundEnemy
+  _stats:
+    MaxHealth: 0
+    MoveSpeed: 0
+    Armour: 0
+    Health: 0
+    Resistances: []
+  _rb: {fileID: 0}
+  _animator: {fileID: 0}
+  _attackColliders: []
+  isPatroling: 0
+  waypoints: []
+  attackRange: 0
+  detectRange: 0
+  <Data>k__BackingField: {fileID: 0}
+  mask:
+    serializedVersion: 2
+    m_Bits: 0
