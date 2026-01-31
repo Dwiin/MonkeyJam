@@ -11,6 +11,7 @@ namespace MonkeyJam.Entities {
     {
         //[SerializeField] private EnemyBase _toPosess; //Debug only, will be removed for actual implementation
         [SerializeField] private SpriteRenderer _spriteRenderer;
+        [SerializeField] private int _maxStamina = 10;
         [Space]
         [Header("Player Movement Shite")]
         [SerializeField] private float _jumpForce = 20f;
@@ -30,7 +31,8 @@ namespace MonkeyJam.Entities {
         private List<AttackData> _onCooldown;
         private AttackData _currentAttack;
         private EnemyData _initialState;
-
+        private int _currentStamina;
+        private bool _isPosessing = false;
 
         private void Start() {
             if (_spriteRenderer == null) {
@@ -43,6 +45,7 @@ namespace MonkeyJam.Entities {
                 coll.enabled = false;
             }
             _initialState = Data;
+            _isPosessing = false;
         }
 
         private void OnEnable() {
@@ -69,23 +72,29 @@ namespace MonkeyJam.Entities {
         }
 
         private void OnAttack(InputAction.CallbackContext context) {
+            if (_currentStamina <= 0 && _isPosessing) return;
             if (Data.Attacks == null || Data.Attacks.Length == 0) return;
             if (_onCooldown.Contains(Data.Attacks[0])) return;
             _currentAttack = Data.Attacks[0];
             _animator.SetInteger("attackIndex", 0);
             _animator.SetTrigger("Attack");
             StartCoroutine(HandleCooldown(Data.Attacks[0]));
-
+            if (_isPosessing) {
+                ConsumeStamina(_currentAttack.StaminaCost);
+            }
         }
 
         private void OnSecondary(InputAction.CallbackContext context) {
+            if (_currentStamina <= 0 && _isPosessing) return;
             if (Data.Attacks == null || Data.Attacks.Length == 0) return;
             if (_onCooldown.Contains(Data.Attacks[1])) return;
             _currentAttack = Data.Attacks[1];
             _animator.SetInteger("attackIndex", 1);
             _animator.SetTrigger("Attack");
             StartCoroutine(HandleCooldown(Data.Attacks[1]));
-
+            if (_isPosessing) {
+                ConsumeStamina(_currentAttack.StaminaCost);
+            }
         }
 
         private void OnJump(InputAction.CallbackContext context) {
@@ -97,8 +106,17 @@ namespace MonkeyJam.Entities {
         
         public void Posess(EnemyData data)
         {
-            SetupStats(data.Stats); 
+            SetupStats(data.Stats);
+            _currentStamina = _maxStamina;
             _animator.runtimeAnimatorController = data.AnimationController;
+            _isPosessing = data == _initialState;
+        }
+
+        private void ConsumeStamina(int amount) {
+            _currentStamina -= amount;
+            if (_currentStamina <= 0) {
+                Posess(_initialState);
+            }
         }
 
         private void Update() {

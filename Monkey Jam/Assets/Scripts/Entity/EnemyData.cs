@@ -14,6 +14,7 @@ namespace MonkeyJam.Entities
         public bool IsRanged;
         public float AttackRange;
         [Tooltip("Which attack animation to play in the animator.")]public int AttackRangeIndex;
+        [Tooltip("How much juice it costs the player to perform.")]public int StaminaCost;
     }
 
     [CreateAssetMenu(menuName = "MonkeyJam/New Enemy", fileName = "New Enemy")]
