@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System;
 using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
@@ -12,10 +13,12 @@ namespace MonkeyJam.Entities
         Vector2 facingDirection;
 
         [SerializeField] LayerMask mask;
+        private List<AttackData> _onCooldown;
 
         private void Start()
         {
             SetupStats(Data.Stats);
+            _onCooldown = new List<AttackData>();
 
             _rb = GetComponent<Rigidbody2D>();
             _animator = GetComponent<Animator>();
@@ -107,6 +110,16 @@ namespace MonkeyJam.Entities
             if (attack)
             {
                 Debug.Log("Attack");
+                bool usedAttack = false;
+                AttackData attDat;
+                foreach(AttackData dat in Data.Attacks)
+                {
+                    if (_onCooldown.Contains(dat) || usedAttack) continue;
+                    attDat = dat;
+                    break;
+                }
+                if (!usedAttack) return;
+                
             }
             else
             {
