@@ -24,6 +24,14 @@ MonoBehaviour:
   - Cooldown: 1
     Damage: 3
     DamageType: 0
+    AttackColliderIndex: 0
+    IsRanged: 0
+    AttackRange: 3
+    AttackRangeIndex: 0
   - Cooldown: 2
     Damage: 5
     DamageType: 0
+    AttackColliderIndex: 0
+    IsRanged: 1
+    AttackRange: 5
+    AttackRangeIndex: 1
