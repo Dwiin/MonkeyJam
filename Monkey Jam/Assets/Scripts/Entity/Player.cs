@@ -29,6 +29,7 @@ namespace MonkeyJam.Entities {
         private bool _grounded = false;
         private List<AttackData> _onCooldown;
         private AttackData _currentAttack;
+        private EnemyData _initialState;
 
 
         private void Start() {
@@ -41,6 +42,7 @@ namespace MonkeyJam.Entities {
             foreach (Collider2D coll in _attackColliders) {
                 coll.enabled = false;
             }
+            _initialState = Data;
         }
 
         private void OnEnable() {
@@ -58,6 +60,12 @@ namespace MonkeyJam.Entities {
 
         private void OnMovement(InputAction.CallbackContext context) {
             _moveVector = context.ReadValue<Vector2>();
+            if (_moveVector != Vector2.zero) {
+                _animator.SetBool("isRunning", true);
+            }
+            else {
+                _animator.SetBool("isRunning", false);
+            }
         }
 
         private void OnAttack(InputAction.CallbackContext context) {
