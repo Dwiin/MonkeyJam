@@ -10,8 +10,10 @@ namespace MonkeyJam.Entities
         public float Cooldown;
         public int Damage;
         public DamageType DamageType;
-        public int AttackColliderIndex;
+        [Tooltip("Which collider to use when attacking if melee.")]public int AttackColliderIndex;
         public bool IsRanged;
+        public float AttackRange;
+        [Tooltip("Which attack animation to play in the animator.")]public int AttackRangeIndex;
     }
 
     [CreateAssetMenu(menuName = "MonkeyJam/New Enemy", fileName = "New Enemy")]
