@@ -218,6 +218,8 @@ MonoBehaviour:
     - DamageType: 0
       Resistance: 0
   _rb: {fileID: 0}
+  _animator: {fileID: 0}
+  _toPosess: {fileID: 0}
 --- !u!4 &1017392217
 Transform:
   m_ObjectHideFlags: 0
@@ -420,7 +422,7 @@ Animator:
   m_GameObject: {fileID: 1944319150}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: cc4d232cdd6ab634e8c13c3afe152333, type: 2}
+  m_Controller: {fileID: 9100000, guid: 98587ca9f79cb904bb9f3c344527e412, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -481,7 +483,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -4795363162621231457, guid: 41c940efab880cd4c8877fe4729d915c, type: 3}
+  m_Sprite: {fileID: 8020143640844766479, guid: f55b3e11ecb8b00428d9b434055471ce, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
