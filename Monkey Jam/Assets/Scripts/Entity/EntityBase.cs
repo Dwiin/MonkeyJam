@@ -38,6 +38,13 @@ namespace MonkeyJam.Entities {
            
         }
 
+        /// <summary>
+        /// Called through animation events to tell the entity that they can start doing the attack logic for whatever cunting thing they're doing
+        /// </summary>
+        public void ValidateAttack() {
+
+        }
+
         protected virtual void SetupStats(EntityStats stats)
         {
             _stats.Armour = stats.Armour;
