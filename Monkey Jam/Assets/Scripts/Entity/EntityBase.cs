@@ -26,8 +26,7 @@ namespace MonkeyJam.Entities {
         [SerializeField] protected Animator _animator;
 
         [Space]
-        [SerializeField] protected Transform wayPoint1;
-        [SerializeField] protected Transform wayPoint2;
+        [SerializeField] protected Transform[] waypoints;
 
         public ResistanceData[] GetResistances() {
             return _stats.Resistances;
