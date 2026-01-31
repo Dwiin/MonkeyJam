@@ -22,8 +22,12 @@ namespace MonkeyJam.Entities {
 
     public abstract class EntityBase : MonoBehaviour, IDamageable {
         [SerializeField] protected EntityStats _stats;
-        [SerializeField] protected Rigidbody _rb;
+        [SerializeField] protected Rigidbody2D _rb;
         [SerializeField] protected Animator _animator;
+
+        [Space]
+        [SerializeField] protected Transform wayPoint1;
+        [SerializeField] protected Transform wayPoint2;
 
         public ResistanceData[] GetResistances() {
             return _stats.Resistances;
