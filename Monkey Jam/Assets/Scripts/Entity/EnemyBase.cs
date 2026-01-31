@@ -5,7 +5,7 @@ namespace MonkeyJam.Entities
 {    
     public abstract class EnemyBase : EntityBase
     {
-        [SerializeField] protected bool isPatroling;
+        [SerializeField] protected bool isPatroling = false;
         [SerializeField] protected Transform[] waypoints;
 
 
