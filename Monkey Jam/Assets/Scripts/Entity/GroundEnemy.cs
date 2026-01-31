@@ -8,6 +8,7 @@ namespace MonkeyJam.Entities
     {
         int wayPointIndex;
         bool isChasing = false;
+        float direction;
         Vector2 facingDirection;
 
         [SerializeField] LayerMask mask;
@@ -25,18 +26,18 @@ namespace MonkeyJam.Entities
 
         private void Update()
         {
+            
             if (isPatroling) { MoveToWayPoint(waypoints[wayPointIndex]); }
             else { _animator.SetBool("isRunning", false); }
 
             RaycastCheck();
-            if (isChasing) { Chasing(); }
         }
 
-        private void MoveToWayPoint(Transform currentPoint)
+        private void Movement(Transform currentPoint)
         {
             _animator.SetBool("isRunning", true);
-            float direction;
-            if (currentPoint.position.x - transform.position.x < 0) 
+            
+            if (currentPoint.position.x - transform.position.x < 0)
             {
                 direction = -1;
                 facingDirection = Vector2.left;
@@ -51,13 +52,17 @@ namespace MonkeyJam.Entities
                 Quaternion newRot = Quaternion.identity;
                 newRot.y = 0;
                 transform.rotation = newRot;
-                
-            } 
-            
+
+            }
+
             Vector3 newPos = transform.position;
             newPos.x += direction * Time.deltaTime * _stats.MoveSpeed;
             transform.position = newPos;
+        }
 
+        private void MoveToWayPoint(Transform currentPoint)
+        {
+            Movement(currentPoint);
             if(direction == -1 && transform.position.x <= currentPoint.position.x)
             {
                 wayPointIndex += 1;
@@ -83,6 +88,8 @@ namespace MonkeyJam.Entities
             {
                 isPatroling = false;
                 isChasing = true;
+                Debug.Log("Chase");
+                Chasing(hit.transform);
             }
             else
             {
@@ -91,12 +98,16 @@ namespace MonkeyJam.Entities
             }
         }
 
-        private void Chasing()
+        private void Chasing(Transform player)
         {
             RaycastHit2D attack = Physics2D.Raycast(transform.position, facingDirection, attackRange);
             if (attack)
             {
                 Debug.Log("Attack");
+            }
+            else
+            {
+                Movement(player);
             }
         }
     }
