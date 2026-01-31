@@ -26,6 +26,7 @@ namespace MonkeyJam.Entities {
         [SerializeField] protected Animator _animator;
 
         [Space]
+        [SerializeField] protected bool isPatroling;
         [SerializeField] protected Transform[] waypoints;
 
         public ResistanceData[] GetResistances() {

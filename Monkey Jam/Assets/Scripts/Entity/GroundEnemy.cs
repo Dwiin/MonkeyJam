@@ -13,6 +13,7 @@ namespace MonkeyJam.Entities
             SetupStats(Data.Stats);
 
             _rb = GetComponent<Rigidbody2D>();
+            _animator = GetComponent<Animator>();
 
             wayPointIndex = 0;
 
@@ -20,11 +21,13 @@ namespace MonkeyJam.Entities
 
         private void Update()
         {
-            MoveToWayPoint(waypoints[wayPointIndex]);
+            if (isPatroling) { MoveToWayPoint(waypoints[wayPointIndex]); }
+            else { _animator.SetBool("isRunning", false); }
         }
 
         private void MoveToWayPoint(Transform currentPoint)
         {
+            _animator.SetBool("isRunning", true);
             float direction;
             if (currentPoint.position.x - transform.position.x < 0) 
             {
