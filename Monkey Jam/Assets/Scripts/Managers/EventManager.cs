@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System;
+using MonkeyJam.Entities;
 
 
 namespace MonkeyJam.Managers {
@@ -9,15 +10,24 @@ namespace MonkeyJam.Managers {
 
 
         public Action<string> OnSceneTransitionBegin;
-        public Action<SceneData> OnSceneTransitionEnd;
+        public Action<SceneHandler> OnSceneTransitionEnd;
+        public Action<Player> OnPlayerSpawned;
+        public Action<EnemyBase> OnEnemyDied;
 
         public void BeginSceneTransition(string scene) {
             OnSceneTransitionBegin?.Invoke(scene);
         }
 
-        public void EndSceneTransition(SceneData data) {
+        public void EndSceneTransition(SceneHandler data) {
             OnSceneTransitionEnd?.Invoke(data);
         }
 
+        public void SpawnPlayer(Player player) {
+            OnPlayerSpawned?.Invoke(player);
+        }
+
+        public void EnemyDied(EnemyBase enemy) {
+            OnEnemyDied?.Invoke(enemy);
+        }
     }
 }
