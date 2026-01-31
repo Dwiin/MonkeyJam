@@ -24,7 +24,7 @@ namespace MonkeyJam.Entities {
         [SerializeField] protected EntityStats _stats;
         [SerializeField] protected Rigidbody2D _rb;
         [SerializeField] protected Animator _animator;
-        [SerializeField] private BoxCollider2D _attackCollider;
+        [SerializeField] private Collider2D[] _attackColliders;
 
         public ResistanceData[] GetResistances() {
             return _stats.Resistances;
@@ -38,32 +38,35 @@ namespace MonkeyJam.Entities {
         /// <summary>
         /// Called through animation events to tell the entity that they can start doing the attack logic for whatever cunting thing they're doing
         /// </summary>
-        public void ValidateAttack(string collisionSize) {
-            float x = 0;
-            float y = 0;
-            string numVal = "";
-            bool editX = true;
-            foreach(char c in collisionSize) {
-                if (char.IsDigit(c)) {
-                    if (editX) numVal += c.ToString();
-                    else numVal += c.ToString();
-                }
-                else {
-                    editX = false;
-                    if (numVal == string.Empty) continue;
-                    x = int.Parse(numVal);
-                    numVal = "";
-                }
-            }
-            y = int.Parse(numVal);
+        public void ValidateAttack(int colliderIndex) {
+            #region Old AnimationEvent BS
+            //float x = 0;
+            //float y = 0;
+            //string numVal = "";
+            //bool editX = true;
+            //foreach(char c in collisionSize) {
+            //    if (char.IsDigit(c)) {
+            //        if (editX) numVal += c.ToString();
+            //        else numVal += c.ToString();
+            //    }
+            //    else {
+            //        editX = false;
+            //        if (numVal == string.Empty) continue;
+            //        x = int.Parse(numVal);
+            //        numVal = "";
+            //    }
+            //}
+            //y = int.Parse(numVal);
 
-            _attackCollider.size = new Vector2(x, y);
-            _attackCollider.offset = new Vector2(x * 0.5f, 0);
-            _attackCollider.enabled = true;
+            //_attackCollider.size = new Vector2(x, y);
+            //_attackCollider.offset = new Vector2(x * 0.5f, 0);
+            //_attackCollider.enabled = true;
+            #endregion
+            _attackColliders[colliderIndex].enabled = true;
         }
 
-        public void InvalidateAttack() {
-            _attackCollider.enabled = false;
+        public void InvalidateAttack(int colliderIndex) {
+            _attackColliders[colliderIndex].enabled = false;
         }
 
         protected virtual void SetupStats(EntityStats stats)
