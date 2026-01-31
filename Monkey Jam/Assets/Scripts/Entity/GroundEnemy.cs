@@ -1,6 +1,8 @@
+using System.Collections.Generic;
 using System;
 using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
+using System.Collections;
 
 namespace MonkeyJam.Entities
 {
@@ -11,11 +13,15 @@ namespace MonkeyJam.Entities
         float direction;
         Vector2 facingDirection;
 
+        [SerializeField] private float _attackDelay = 5;
         [SerializeField] LayerMask mask;
+        private List<AttackData> _onCooldown;
+        private bool _dontAttack = false;
 
         private void Start()
         {
             SetupStats(Data.Stats);
+            _onCooldown = new List<AttackData>();
 
             _rb = GetComponent<Rigidbody2D>();
             _animator = GetComponent<Animator>();
@@ -103,15 +109,68 @@ namespace MonkeyJam.Entities
 
         private void Chasing(Transform player)
         {
-            RaycastHit2D attack = Physics2D.Raycast(transform.position, facingDirection, attackRange);
-            if (attack)
+            bool usedAttack = false;
+            AttackData attDat = new AttackData { };
+            Player hitPlayer = null;
+            float closestDist = float.MaxValue;
+            List<AttackData> valid = new List<AttackData>();
+            foreach (AttackData dat in Data.Attacks)
             {
-                Debug.Log("Attack");
+                if (dat.AttackRange < closestDist) closestDist = dat.AttackRange;
+                if (_onCooldown.Contains(dat) || usedAttack) continue;
+                Collider2D caught = Physics2D.OverlapCircle(transform.position, dat.AttackRange, mask);
+                if (caught == null) continue;
+                if (!caught.gameObject.TryGetComponent(out hitPlayer)) continue;
+                //attDat = dat;
+                //usedAttack = true;
+                valid.Add(dat);
+                //break;
             }
-            else
+            if (valid.Count > 0)
+            {
+                attDat = valid[UnityEngine.Random.Range(0, valid.Count)];
+                usedAttack = true;
+            }
+            if (!usedAttack && Vector2.Distance(player.position, transform.position) > closestDist)
             {
                 Movement(player);
+                return;
             }
+            if (!usedAttack || _dontAttack) return;
+            Debug.Log($"IsRanged: {attDat.IsRanged}");
+
+            Debug.Log("Attacking player in range!");
+            _animator.SetInteger("attackIndex", attDat.AttackRangeIndex);
+            _animator.SetTrigger("Attack");
+            StartCoroutine(HandleAttackDelay());
+            StartCoroutine(HandleCooldown(attDat));
+
+            //RaycastHit2D attack = Physics2D.Raycast(transform.position, facingDirection, attDat.AttackRange, mask);
+            //if (attack)
+            //{
+            //    Debug.LogWarning($"Attack: {attDat.AttackRange}");
+            //    _animator.SetInteger("attackIndex", attDat.AttackRangeIndex);
+            //    _animator.SetTrigger("Attack");
+            //    StartCoroutine(HandleCooldown(attDat));
+            //}
+            //else
+            //{
+            //    Movement(player);
+            //}
+        }
+
+        private IEnumerator HandleCooldown(AttackData data)
+        {
+            _onCooldown.Add(data);
+            yield return new WaitForSeconds(data.Cooldown);
+            _onCooldown.Remove(data);
+        }
+
+        private IEnumerator HandleAttackDelay()
+        {
+            _dontAttack = true;
+            yield return new WaitForSeconds(_attackDelay);
+            _dontAttack = false;
         }
     }
 }

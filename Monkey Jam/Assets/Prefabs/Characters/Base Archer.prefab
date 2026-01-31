@@ -139,7 +139,7 @@ MonoBehaviour:
   isPatroling: 0
   waypoints: []
   attackRange: 0
-  detectRange: 0
+  detectRange: 1.71
   <Data>k__BackingField: {fileID: 11400000, guid: 5a9dc2624c31e2247bb42e5f5da8ad10, type: 2}
   mask:
     serializedVersion: 2
