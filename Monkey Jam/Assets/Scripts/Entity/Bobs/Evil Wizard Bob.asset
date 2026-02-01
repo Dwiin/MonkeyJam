@@ -15,7 +15,7 @@ MonoBehaviour:
   Name: Bob
   Stats:
     MaxHealth: 5
-    MoveSpeed: 20
+    MoveSpeed: 5
     Armour: 0
     Health: 0
     Resistances: []
