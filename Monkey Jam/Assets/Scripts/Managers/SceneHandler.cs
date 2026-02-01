@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEditor;
 using UnityEngine.SceneManagement;
 using MonkeyJam.Entities;
 
@@ -7,13 +8,26 @@ namespace MonkeyJam.Managers {
     public class SceneHandler : MonoBehaviour {
         [SerializeField] private Player _player;
         [SerializeField] private Transform _spawnLocation;
+        [SerializeField] private Object _mainMenuScene;
         [SerializeField, Tooltip("Only set this true for the first level")] private bool _firstScene = false;
+        private string _path = "";
+        public string ScenePath => _path;
 
+#if UNITY_EDITOR
+        private void OnValidate() {
+            if (_mainMenuScene != null) {
+                _path = AssetDatabase.GetAssetPath(_mainMenuScene);
+            }
+        }
+#endif
+        
+        
         private void Awake() {
             //Bind events
             EventManager.Instance.OnSceneTransitionBegin += OnSceneTransition;
             EventManager.Instance.OnSceneTransitionEnd += OnSceneTransitionEnd;
             EventManager.Instance.OnPlayerSpawned += OnPlayerSpawned;
+            EventManager.Instance.OnPlayerDied += OnPlayerDied;
         }
 
         private void Start()
@@ -40,6 +54,11 @@ namespace MonkeyJam.Managers {
             EventManager.Instance.SpawnPlayer(_player);
 
             SceneManager.UnloadSceneAsync(gameObject.scene);
+        }
+
+        private void OnPlayerDied()
+        {
+            SceneManager.LoadScene(ScenePath, LoadSceneMode.Single);
         }
 
         private void OnDisable() {

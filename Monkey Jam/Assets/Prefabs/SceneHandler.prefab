@@ -46,3 +46,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MonkeyJam.Managers.SceneHandler
   _player: {fileID: 0}
   _spawnLocation: {fileID: 0}
+  _mainMenuScene: {fileID: 102900000, guid: da90329d543da364b8104094daaae659, type: 3}
+  _firstScene: 0
