@@ -342,7 +342,7 @@ PrefabInstance:
       objectReference: {fileID: 102900000, guid: ac87e01273dc6064b82e883ecacc74cd, type: 3}
     - target: {fileID: 3351415410604388147, guid: 44f219349066a97408ba7a32ec96b178, type: 3}
       propertyPath: _enemiesToKill
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4719635361188040137, guid: 44f219349066a97408ba7a32ec96b178, type: 3}
       propertyPath: m_LocalPosition.x
@@ -596,7 +596,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7590029160942843180, guid: 67dfb42d00ddefd4a8e5e1a56806f0cb, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -950,7 +950,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 897389011641299800, guid: 0647fdadfa95b324bbea8288ff37575b, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1599104249144521850, guid: 0647fdadfa95b324bbea8288ff37575b, type: 3}
       propertyPath: m_Sprite

@@ -39,3 +39,16 @@ MonoBehaviour:
     AttackRange: 5
     AttackRangeIndex: 1
     StaminaCost: 0
+  SoundData:
+    DeathSound:
+      Clip: {fileID: 8300000, guid: b7ebaaf1ec1bf934aa7da2efd8ddaafe, type: 3}
+      Volume: 1
+    DamageSound:
+      Clip: {fileID: 8300000, guid: 10a62de02652d0a4e95103154dab6cec, type: 3}
+      Volume: 1
+    Attack1Sound:
+      Clip: {fileID: 8300000, guid: e3e31a9d9c42eec4c83a5d58295b1913, type: 3}
+      Volume: 1
+    Attack2Sound:
+      Clip: {fileID: 8300000, guid: 4a386c22384372b438182202337324b6, type: 3}
+      Volume: 1
