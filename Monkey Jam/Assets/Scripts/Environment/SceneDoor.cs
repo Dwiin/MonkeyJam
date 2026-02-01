@@ -7,6 +7,7 @@ using UnityEngine;
 namespace MonkeyJam.Environment {
     public class SceneDoor : MonoBehaviour {
         [SerializeField] private Object _nextScene;
+        [SerializeField] private string _sceneName;
         [Tooltip("How many enemies to kill before the door lets the player progress. We do be lovin slaughter."), SerializeField] private int _enemiesToKill;
         private int _currentEnemyDeathCount = 0;
         private bool _activated = false;
@@ -29,7 +30,7 @@ namespace MonkeyJam.Environment {
             if (_activated || _currentEnemyDeathCount < _enemiesToKill) return;
             if (!collision.gameObject.CompareTag("Player")) return;
             _activated = true;
-            EventManager.Instance.BeginSceneTransition(ScenePath);
+            EventManager.Instance.BeginSceneTransition(_sceneName);
         }
 
         private void OnEnemyDied(EnemyBase enemy) {

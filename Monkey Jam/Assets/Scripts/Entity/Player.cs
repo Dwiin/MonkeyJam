@@ -67,6 +67,8 @@ namespace MonkeyJam.Entities {
             _controls.Player.Attack.performed += OnAttack;
             _controls.Player.Secondary.performed += OnSecondary;
             _controls.Player.Sprint.performed += OnAbandonBody;
+            
+            EventManager.Instance.SpawnPlayer(this);
         }
 
         private void OnMovement(InputAction.CallbackContext context) {

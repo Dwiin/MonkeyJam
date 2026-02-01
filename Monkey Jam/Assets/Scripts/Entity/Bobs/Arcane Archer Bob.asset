@@ -26,7 +26,7 @@ MonoBehaviour:
     DamageType: 0
     AttackColliderIndex: 0
     IsRanged: 1
-    ProjectilePrefab: {fileID: 0}
+    ProjectilePrefab: {fileID: 5048231894263871456, guid: d6adc43cea0836e4b8fa4fb35aa69fdb, type: 3}
     AttackRange: 3
     AttackRangeIndex: 0
     StaminaCost: 0
