@@ -12,10 +12,7 @@ public class MainMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Time.timeScale == 0)
-        {
-            Time.timeScale = 1f;
-        }
+
     }
 
     public void PlayButton(string sceneName)
