@@ -38,7 +38,7 @@ namespace MonkeyJam.Managers {
 
         private void OnSceneTransition(string scene) {
             Debug.Log($"Loading {scene} scene");
-            AsyncOperation loadOp = SceneManager.LoadSceneAsync(scene, LoadSceneMode.Additive); //Add a ui transition maybe, who knows
+            AsyncOperation loadOp = SceneManager.LoadSceneAsync(scene, LoadSceneMode.Single); //Add a ui transition maybe, who knows
         }
 
         private void OnPlayerSpawned(Player player) {
@@ -50,15 +50,19 @@ namespace MonkeyJam.Managers {
         private void OnSceneTransitionEnd(SceneHandler handler) {
             if (handler == this) return;
             EventManager.Instance.OnSceneTransitionEnd -= OnSceneTransitionEnd;
-            SceneManager.MoveGameObjectToScene(_player.gameObject, handler.gameObject.scene);
-            EventManager.Instance.SpawnPlayer(_player);
+            if (_player != null)
+            {
+                SceneManager.MoveGameObjectToScene(_player.gameObject, handler.gameObject.scene);
+            }
 
+            EventManager.Instance.SpawnPlayer(_player);
+            Debug.Log("Unloading scene");
             SceneManager.UnloadSceneAsync(gameObject.scene);
         }
 
         private void OnPlayerDied()
         {
-            SceneManager.LoadScene(ScenePath, LoadSceneMode.Single);
+            SceneManager.LoadScene("Main Menu", LoadSceneMode.Single);
         }
 
         private void OnDisable() {
