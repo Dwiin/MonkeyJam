@@ -30,10 +30,12 @@ namespace MonkeyJam.Entities {
         private List<AttackData> _onCooldown;
         private AttackData _currentAttack;
         private EnemyData _initialState;
-        private int _currentStamina;
+        [HideInInspector] public int _currentStamina;
         private bool _isPosessing = false;
         private Vector2 _initialColliderSize;
         private Vector2 _initialColliderOffset;
+        private bool _playerAttacking = false;
+        private float _attackDebounce = 0.2f;
 
         private void Start() {
             if (_spriteRenderer == null) {
@@ -81,6 +83,17 @@ namespace MonkeyJam.Entities {
             Posess(_initialState);
         }
 
+        public override void TakeDamage(int amount, EntityBase source = null)
+        {
+            if (_stats.Health <= 0) return; //Already dead leave me alone ya cunt
+            _stats.Health -= amount;
+            if (_stats.Health <= 0)
+            {
+                EventManager.Instance.PlayerDied();
+                _spriteRenderer.enabled = false;
+            }
+        }
+
         private void OnAttack(InputAction.CallbackContext context) {
             if (_currentStamina <= 0 && _isPosessing) return;
             if (Data.Attacks == null || Data.Attacks.Length == 0) return;
@@ -89,6 +102,7 @@ namespace MonkeyJam.Entities {
             _animator.SetInteger("attackIndex", _currentAttack.AttackRangeIndex);
             _animator.SetTrigger("Attack");
             StartCoroutine(HandleCooldown(Data.Attacks[0]));
+            StartCoroutine(HandleAttackDebounce());
             if (_isPosessing) {
                 Debug.Log($"Consuming {_currentAttack.StaminaCost} stamina");
                 ConsumeStamina(_currentAttack.StaminaCost);
@@ -99,11 +113,11 @@ namespace MonkeyJam.Entities {
             if (_currentStamina <= 0 && _isPosessing) return;
             if (Data.Attacks == null || Data.Attacks.Length < 2) return;
             if (_onCooldown.Contains(Data.Attacks[1])) return;
-            Debug.Log("Secondary attack");
             _currentAttack = Data.Attacks[1];
             _animator.SetInteger("attackIndex", _currentAttack.AttackRangeIndex);
             _animator.SetTrigger("Attack");
             StartCoroutine(HandleCooldown(Data.Attacks[1]));
+            StartCoroutine(HandleAttackDebounce());
             if (_isPosessing) {
                 ConsumeStamina(_currentAttack.StaminaCost);
             }
@@ -144,6 +158,8 @@ namespace MonkeyJam.Entities {
                 BodyCollider.offset = _initialColliderOffset;
                 _groundCheckPoint.localPosition = new Vector2(0, -BodyCollider.size.y - BodyCollider.offset.y);
             }
+
+            EventManager.Instance.PlayerPoessession(data, _maxStamina);
         }
 
         private void ConsumeStamina(int amount) {
@@ -151,9 +167,15 @@ namespace MonkeyJam.Entities {
             if (_currentStamina <= 0) {
                 Posess(_initialState);
             }
+            else
+            {
+                EventManager.Instance.UpdatePlayerStamina(_currentStamina, _maxStamina);
+            }
         }
 
-        private void Update() {
+        private void Update()
+        {
+            if (_stats.Health <= 0) return;
             if (_moveVector == Vector2.zero) return;
             _spriteRenderer.flipX = _moveVector.x < 0;
             foreach(Collider2D collider in _attackColliders) {
@@ -173,6 +195,7 @@ namespace MonkeyJam.Entities {
         }
 
         private void FixedUpdate() {
+            if (_stats.Health <= 0) return;
             _rb.linearVelocity = _moveVector.With(y: 0) * _stats.MoveSpeed;
             _grounded = IsGrounded();
 
@@ -193,10 +216,13 @@ namespace MonkeyJam.Entities {
             }
         }
 
-        private void OnTriggerEnter2D(Collider2D collision) {
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            if (!_playerAttacking || _stats.Health <= 0) return;
             if (collision.gameObject == this.gameObject) return;
             EntityBase entity = collision.gameObject.GetComponent<EntityBase>();
             if (entity == null) return;
+            Debug.Log($"Player trigger method called! Entity: {entity}");
             if (!_isPosessing)
             {
                 Posess(entity);
@@ -208,6 +234,13 @@ namespace MonkeyJam.Entities {
             _onCooldown.Add(data);
             yield return new WaitForSeconds(data.Cooldown);
             _onCooldown.Remove(data);
+        }
+
+        private IEnumerator HandleAttackDebounce()
+        {
+            _playerAttacking = true;
+            yield return new WaitForSeconds(_attackDebounce);
+            _playerAttacking = false;
         }
 
         private bool IsGrounded() => Physics2D.Raycast(_groundCheckPoint.position, Vector3.down, _groundCheckLength, _groundLayer);

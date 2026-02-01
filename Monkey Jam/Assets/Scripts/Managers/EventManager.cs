@@ -13,6 +13,9 @@ namespace MonkeyJam.Managers {
         public Action<SceneHandler> OnSceneTransitionEnd;
         public Action<Player> OnPlayerSpawned;
         public Action<EnemyBase> OnEnemyDied;
+        public Action OnPlayerDied;
+        public Action<EnemyData, int> OnPlayerPosession;
+        public Action<int, int> OnPlayerStaminaUpdated;
 
         public void BeginSceneTransition(string scene) {
             OnSceneTransitionBegin?.Invoke(scene);
@@ -28,6 +31,21 @@ namespace MonkeyJam.Managers {
 
         public void EnemyDied(EnemyBase enemy) {
             OnEnemyDied?.Invoke(enemy);
+        }
+
+        public void PlayerDied()
+        {
+            OnPlayerDied?.Invoke();
+        }
+
+        public void PlayerPoessession(EnemyData data, int stamina)
+        {
+            OnPlayerPosession?.Invoke(data, stamina);
+        }
+
+        public void UpdatePlayerStamina(int current, int max)
+        {
+            OnPlayerStaminaUpdated?.Invoke(current, max);
         }
     }
 }

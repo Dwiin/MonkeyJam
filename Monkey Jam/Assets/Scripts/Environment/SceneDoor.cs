@@ -27,6 +27,7 @@ namespace MonkeyJam.Environment {
 
         private void OnTriggerEnter2D(Collider2D collision) {
             if (_activated || _currentEnemyDeathCount < _enemiesToKill) return;
+            if (!collision.gameObject.CompareTag("Player")) return;
             _activated = true;
             EventManager.Instance.BeginSceneTransition(ScenePath);
         }

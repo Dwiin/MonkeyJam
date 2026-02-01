@@ -1,3 +1,4 @@
+using System;
 using MonkeyJam.Managers;
 using UnityEngine;
 
@@ -31,6 +32,19 @@ namespace MonkeyJam.Entities {
         
         public ResistanceData[] GetResistances() {
             return _stats.Resistances;
+        }
+
+        private void Awake()
+        {
+            if (_spriteRenderer == null)
+            {
+                _spriteRenderer = GetComponent<SpriteRenderer>();
+            }
+
+            if (_rb == null)
+            {
+                _rb = GetComponent<Rigidbody2D>();
+            }
         }
 
         public virtual void TakeDamage(int amount, EntityBase source = null) {
