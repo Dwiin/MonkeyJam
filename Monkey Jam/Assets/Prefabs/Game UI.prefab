@@ -133,7 +133,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -192,6 +192,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   playerScript: {fileID: 0}
   staminaSlider: {fileID: 4006205745377725783}
+  deathMenu: {fileID: 0}
 --- !u!1 &3131956641376338624
 GameObject:
   m_ObjectHideFlags: 0

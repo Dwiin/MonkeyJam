@@ -29,6 +29,7 @@ namespace MonkeyJam.Entities {
         [SerializeField] protected SpriteRenderer _spriteRenderer;
         [field: SerializeField] public EnemyData Data { get; protected set; }
         [field: SerializeField] public CapsuleCollider2D BodyCollider { get; private set; }
+        protected AttackData _attackUsing;
         
         public ResistanceData[] GetResistances() {
             return _stats.Resistances;
@@ -87,6 +88,15 @@ namespace MonkeyJam.Entities {
 
             AttackData attDat = Data.Attacks[attackIndex];
 
+            if (Data.SoundData.Attack1Sound.Clip != null && attackIndex == 0)
+            {
+                EventManager.Instance.RequestSound(Data.SoundData.Attack1Sound.Clip, transform, Data.SoundData.Attack1Sound.Volume);
+            }else if (Data.SoundData.Attack2Sound.Clip != null && attackIndex == 1)
+            {
+                EventManager.Instance.RequestSound(Data.SoundData.Attack2Sound.Clip, transform, Data.SoundData.Attack2Sound.Volume);
+            }
+
+            _attackUsing = attDat;
             if (attDat.IsRanged)
             {
                 ProjectileController controller = Instantiate(attDat.ProjectilePrefab, transform.position, Quaternion.Euler(0, 0, 0)).GetComponent<ProjectileController>();

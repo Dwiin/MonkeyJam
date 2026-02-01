@@ -1,4 +1,5 @@
-﻿using MonkeyJam.Managers;
+﻿using System;
+using MonkeyJam.Managers;
 using MonkeyJam.Util;
 using System.Collections;
 using System.Collections.Generic;
@@ -83,6 +84,18 @@ namespace MonkeyJam.Entities {
             Posess(_initialState);
         }
 
+        public override void TakeDamage(int amount, EntityBase source = null)
+        {
+            if (_stats.Health <= 0) return; //Already dead leave me alone ya cunt
+            _stats.Health -= amount;
+            if (_stats.Health <= 0)
+            {
+                EventManager.Instance.PlayerDied();
+                _spriteRenderer.enabled = false;
+                gameObject.SetActive(false);
+            }
+        }
+
         private void OnAttack(InputAction.CallbackContext context) {
             if (_currentStamina <= 0 && _isPosessing) return;
             if (Data.Attacks == null || Data.Attacks.Length == 0) return;
@@ -147,6 +160,8 @@ namespace MonkeyJam.Entities {
                 BodyCollider.offset = _initialColliderOffset;
                 _groundCheckPoint.localPosition = new Vector2(0, -BodyCollider.size.y - BodyCollider.offset.y);
             }
+
+            EventManager.Instance.PlayerPoessession(data, _maxStamina);
         }
 
         private void ConsumeStamina(int amount) {
@@ -154,9 +169,15 @@ namespace MonkeyJam.Entities {
             if (_currentStamina <= 0) {
                 Posess(_initialState);
             }
+            else
+            {
+                EventManager.Instance.UpdatePlayerStamina(_currentStamina, _maxStamina);
+            }
         }
 
-        private void Update() {
+        private void Update()
+        {
+            if (_stats.Health <= 0) return;
             if (_moveVector == Vector2.zero) return;
             _spriteRenderer.flipX = _moveVector.x < 0;
             foreach(Collider2D collider in _attackColliders) {
@@ -176,6 +197,7 @@ namespace MonkeyJam.Entities {
         }
 
         private void FixedUpdate() {
+            if (_stats.Health <= 0) return;
             _rb.linearVelocity = _moveVector.With(y: 0) * _stats.MoveSpeed;
             _grounded = IsGrounded();
 
@@ -198,7 +220,7 @@ namespace MonkeyJam.Entities {
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            if (!_playerAttacking) return;
+            if (!_playerAttacking || _stats.Health <= 0) return;
             if (collision.gameObject == this.gameObject) return;
             EntityBase entity = collision.gameObject.GetComponent<EntityBase>();
             if (entity == null) return;
@@ -228,6 +250,17 @@ namespace MonkeyJam.Entities {
         private void OnDrawGizmosSelected() {
             Gizmos.color = Color.green;
             Gizmos.DrawRay(_groundCheckPoint.position, Vector3.down * _groundCheckLength);
+        }
+
+        private void OnDisable()
+        {
+            _controls.Player.Move.performed -= OnMovement;
+            _controls.Player.Move.canceled -= OnMovement;
+            _controls.Player.Jump.performed -= OnJump;
+            _controls.Player.Attack.performed -= OnAttack;
+            _controls.Player.Secondary.performed -= OnSecondary;
+            _controls.Player.Sprint.performed -= OnAbandonBody;
+            _controls.Player.Disable();
         }
     }
 }
