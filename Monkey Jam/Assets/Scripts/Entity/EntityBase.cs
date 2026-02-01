@@ -25,8 +25,10 @@ namespace MonkeyJam.Entities {
         [SerializeField] protected Rigidbody2D _rb;
         [SerializeField] protected Animator _animator;
         [SerializeField] protected Collider2D[] _attackColliders;
-        [field: SerializeField] public EnemyData Data { get; private set; }
-
+        [SerializeField] protected SpriteRenderer _spriteRenderer;
+        [field: SerializeField] public EnemyData Data { get; protected set; }
+        [field: SerializeField] public CapsuleCollider2D BodyCollider { get; private set; }
+        
         public ResistanceData[] GetResistances() {
             return _stats.Resistances;
         }
@@ -38,7 +40,7 @@ namespace MonkeyJam.Entities {
         /// <summary>
         /// Called through animation events to tell the entity that they can start doing the attack logic for whatever cunting thing they're doing
         /// </summary>
-        public void ValidateAttack(int colliderIndex) {
+        public virtual void ValidateAttack(int attackIndex) { //
             #region Old AnimationEvent BS
             //float x = 0;
             //float y = 0;
@@ -62,12 +64,35 @@ namespace MonkeyJam.Entities {
             //_attackCollider.offset = new Vector2(x * 0.5f, 0);
             //_attackCollider.enabled = true;
             #endregion
-            if (Data.Attacks[colliderIndex].IsRanged) return; // Fire projectile
-            _attackColliders[colliderIndex].enabled = true;
+
+            if (attackIndex >= Data.Attacks.Length)
+            {
+                Debug.LogWarning("Too high of an attack index applied to animation event!");
+                return;
+            }
+
+            AttackData attDat = Data.Attacks[attackIndex];
+
+            if (attDat.IsRanged)
+            {
+                ProjectileController controller = Instantiate(attDat.ProjectilePrefab, transform.position, Quaternion.Euler(0, 0, 0)).GetComponent<ProjectileController>();
+                controller.Init(this, attDat, _spriteRenderer.flipX);
+                return;
+            }
+            Debug.Log($"Enabling collider at index {attDat.AttackColliderIndex}");
+            _attackColliders[attDat.AttackColliderIndex].enabled = true;
+            //_attackColliders[attackIndex].enabled = true;
         }
 
-        public void InvalidateAttack(int colliderIndex) {
-            _attackColliders[colliderIndex].enabled = false;
+        public void InvalidateAttack(int attackIndex) {
+            if (attackIndex >= Data.Attacks.Length)
+            {
+                Debug.LogWarning("Too high of an attack index applied to animation event!");
+                return;
+            }
+            Debug.Log($"Enabling collider at index {Data.Attacks[attackIndex].AttackColliderIndex}");
+            _attackColliders[Data.Attacks[attackIndex].AttackColliderIndex].enabled = false;
+            //_attackColliders[colliderIndex].enabled = false;
         }
 
         protected virtual void SetupStats(EntityStats stats)
