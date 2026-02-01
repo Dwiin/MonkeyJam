@@ -12,6 +12,7 @@ namespace MonkeyJam.Entities
         public DamageType DamageType;
         [Tooltip("Which collider to use when attacking if melee.")]public int AttackColliderIndex;
         public bool IsRanged;
+        public GameObject ProjectilePrefab;
         public float AttackRange;
         [Tooltip("Which attack animation to play in the animator.")]public int AttackRangeIndex;
         [Tooltip("How much juice it costs the player to perform.")]public int StaminaCost;
