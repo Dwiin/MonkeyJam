@@ -15,7 +15,7 @@ MonoBehaviour:
   Name: Bob
   Stats:
     MaxHealth: 5
-    MoveSpeed: 20
+    MoveSpeed: 6
     Armour: 0
     Health: 0
     Resistances: []
@@ -26,6 +26,7 @@ MonoBehaviour:
     DamageType: 0
     AttackColliderIndex: 0
     IsRanged: 0
+    ProjectilePrefab: {fileID: 0}
     AttackRange: 3
     AttackRangeIndex: 0
     StaminaCost: 0
@@ -34,6 +35,7 @@ MonoBehaviour:
     DamageType: 0
     AttackColliderIndex: 0
     IsRanged: 1
+    ProjectilePrefab: {fileID: 0}
     AttackRange: 5
     AttackRangeIndex: 1
     StaminaCost: 0
