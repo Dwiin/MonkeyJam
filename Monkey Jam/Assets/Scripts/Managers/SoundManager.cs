@@ -1,3 +1,5 @@
+using System;
+using MonkeyJam.Managers;
 using UnityEngine;
 
 public class SoundManager : MonoBehaviour
@@ -12,6 +14,8 @@ public class SoundManager : MonoBehaviour
         {
             instance = this;
         }
+
+        EventManager.Instance.OnSoundRequested += PlaySoundFXClip;
     }
     
     public void PlaySoundFXClip(AudioClip audioClip, Transform spawnTransform, float volume)
@@ -27,5 +31,10 @@ public class SoundManager : MonoBehaviour
         float clipLength = audioSource.clip.length;
 
         Destroy(audioSource, audioSource.clip.length);
+    }
+
+    private void OnDisable()
+    {
+        EventManager.Instance.OnSoundRequested -= PlaySoundFXClip;
     }
 }

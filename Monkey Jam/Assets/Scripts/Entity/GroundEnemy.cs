@@ -3,6 +3,7 @@ using System;
 using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 using System.Collections;
+using MonkeyJam.Util;
 
 namespace MonkeyJam.Entities
 {
@@ -17,6 +18,7 @@ namespace MonkeyJam.Entities
         [SerializeField] LayerMask mask;
         private List<AttackData> _onCooldown;
         private bool _dontAttack = false;
+        private Dictionary<Collider2D, Vector2> _origOffsets;
 
         private void Start()
         {
@@ -25,7 +27,13 @@ namespace MonkeyJam.Entities
 
             _rb = GetComponent<Rigidbody2D>();
             _animator = GetComponent<Animator>();
+            _origOffsets = new Dictionary<Collider2D, Vector2>();
 
+            foreach (Collider2D collider in _attackColliders)
+            {
+                _origOffsets.Add(collider, collider.offset);
+            }
+            
             wayPointIndex = 0;
 
         }
@@ -50,20 +58,25 @@ namespace MonkeyJam.Entities
             {
                 direction = -1;
                 facingDirection = Vector2.left;
-                Quaternion newRot = Quaternion.identity;
+                /*Quaternion newRot = Quaternion.identity;
                 newRot.y = 180;
-                transform.rotation = newRot;
+                transform.rotation = newRot;*/
             }
             else
             {
                 direction = 1;
                 facingDirection = Vector2.right;
-                Quaternion newRot = Quaternion.identity;
+                /*Quaternion newRot = Quaternion.identity;
                 newRot.y = 0;
-                transform.rotation = newRot;
+                transform.rotation = newRot;*/
 
             }
-
+            _spriteRenderer.flipX = facingDirection == Vector2.left;
+            foreach (Collider2D collider in _attackColliders)
+            {
+                Vector2 offset = _origOffsets[collider];
+                collider.offset = offset.With(x: _spriteRenderer.flipX ? -offset.x : offset.x);
+            }
             Vector3 newPos = transform.position;
             newPos.x += direction * Time.deltaTime * _stats.MoveSpeed;
             transform.position = newPos;
