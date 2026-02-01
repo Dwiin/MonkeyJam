@@ -30,7 +30,7 @@ namespace MonkeyJam.Entities {
         private List<AttackData> _onCooldown;
         private AttackData _currentAttack;
         private EnemyData _initialState;
-        private int _currentStamina;
+        [HideInInspector] public int _currentStamina;
         private bool _isPosessing = false;
         private Vector2 _initialColliderSize;
         private Vector2 _initialColliderOffset;
