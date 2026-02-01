@@ -147,12 +147,18 @@ namespace MonkeyJam.Entities {
                 BodyCollider.offset = _initialColliderOffset;
                 _groundCheckPoint.localPosition = new Vector2(0, -BodyCollider.size.y - BodyCollider.offset.y);
             }
+
+            EventManager.Instance.PlayerPoessession(data, _maxStamina);
         }
 
         private void ConsumeStamina(int amount) {
             _currentStamina -= amount;
             if (_currentStamina <= 0) {
                 Posess(_initialState);
+            }
+            else
+            {
+                EventManager.Instance.UpdatePlayerStamina(_currentStamina, _maxStamina);
             }
         }
 
