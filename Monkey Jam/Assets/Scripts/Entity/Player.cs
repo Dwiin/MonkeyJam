@@ -83,6 +83,17 @@ namespace MonkeyJam.Entities {
             Posess(_initialState);
         }
 
+        public override void TakeDamage(int amount, EntityBase source = null)
+        {
+            if (_stats.Health <= 0) return; //Already dead leave me alone ya cunt
+            _stats.Health -= amount;
+            if (_stats.Health <= 0)
+            {
+                EventManager.Instance.PlayerDied();
+                _spriteRenderer.enabled = false;
+            }
+        }
+
         private void OnAttack(InputAction.CallbackContext context) {
             if (_currentStamina <= 0 && _isPosessing) return;
             if (Data.Attacks == null || Data.Attacks.Length == 0) return;
@@ -162,7 +173,9 @@ namespace MonkeyJam.Entities {
             }
         }
 
-        private void Update() {
+        private void Update()
+        {
+            if (_stats.Health <= 0) return;
             if (_moveVector == Vector2.zero) return;
             _spriteRenderer.flipX = _moveVector.x < 0;
             foreach(Collider2D collider in _attackColliders) {
@@ -182,6 +195,7 @@ namespace MonkeyJam.Entities {
         }
 
         private void FixedUpdate() {
+            if (_stats.Health <= 0) return;
             _rb.linearVelocity = _moveVector.With(y: 0) * _stats.MoveSpeed;
             _grounded = IsGrounded();
 
@@ -204,7 +218,7 @@ namespace MonkeyJam.Entities {
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            if (!_playerAttacking) return;
+            if (!_playerAttacking || _stats.Health <= 0) return;
             if (collision.gameObject == this.gameObject) return;
             EntityBase entity = collision.gameObject.GetComponent<EntityBase>();
             if (entity == null) return;
