@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/George's Breedable scenes/UI.unity
+    path: Assets/Scenes/George's Breedable scenes/Main Menu.unity
     guid: da90329d543da364b8104094daaae659
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity

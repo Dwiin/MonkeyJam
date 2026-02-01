@@ -2,6 +2,7 @@ using System;
 using MonkeyJam.Entities;
 using MonkeyJam.Managers;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Object = UnityEngine.Object;
 
@@ -9,6 +10,7 @@ public class GameUI : MonoBehaviour
 {
     [SerializeField] private Player playerScript;
     [SerializeField] private Slider staminaSlider;
+    [SerializeField] private GameObject deathMenu;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -50,6 +52,13 @@ public class GameUI : MonoBehaviour
     private void OnPlayerDied()
     {
         //Oh shit he ded
+        Time.timeScale = 0;
+        deathMenu.SetActive(true);
+    }
+
+    public void MainMenu(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
     }
 
     private void OnDisable() //Cleaning up any event connections in case this shit is on every scene and gets destroyed during scene transition.
