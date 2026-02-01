@@ -34,8 +34,21 @@ MonoBehaviour:
     Damage: 5
     DamageType: 0
     AttackColliderIndex: 0
-    IsRanged: 1
+    IsRanged: 0
     ProjectilePrefab: {fileID: 0}
     AttackRange: 5
     AttackRangeIndex: 1
     StaminaCost: 0
+  SoundData:
+    DeathSound:
+      Clip: {fileID: 0}
+      Volume: 0
+    DamageSound:
+      Clip: {fileID: 0}
+      Volume: 0
+    Attack1Sound:
+      Clip: {fileID: 0}
+      Volume: 0
+    Attack2Sound:
+      Clip: {fileID: 0}
+      Volume: 0
