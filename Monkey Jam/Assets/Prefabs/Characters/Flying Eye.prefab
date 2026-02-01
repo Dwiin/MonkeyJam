@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -136,7 +136,9 @@ MonoBehaviour:
   _rb: {fileID: 0}
   _animator: {fileID: 1001626278846774476}
   _attackColliders: []
+  _spriteRenderer: {fileID: 0}
   <Data>k__BackingField: {fileID: 11400000, guid: beb4a0165f01e06488682876d54e12a7, type: 2}
+  <BodyCollider>k__BackingField: {fileID: 0}
   isPatroling: 0
   waypoints: []
   attackRange: 0
