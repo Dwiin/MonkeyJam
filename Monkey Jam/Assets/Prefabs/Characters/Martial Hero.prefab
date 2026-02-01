@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1545079616125010394}
   - component: {fileID: 3400888699603250495}
   - component: {fileID: 8096836579351574776}
+  - component: {fileID: 4484902742516676117}
   - component: {fileID: 9174840942072364279}
   m_Layer: 0
   m_Name: Martial Hero
@@ -136,8 +137,10 @@ MonoBehaviour:
     Resistances: []
   _rb: {fileID: 0}
   _animator: {fileID: 3400888699603250495}
-  _attackColliders: []
+  _attackColliders:
+  - {fileID: 9174840942072364279}
   <Data>k__BackingField: {fileID: 11400000, guid: 975a753cf699b5a41827e1c3267278fa, type: 2}
+  <BodyCollider>k__BackingField: {fileID: 4484902742516676117}
   isPatroling: 0
   waypoints: []
   attackRange: 0
@@ -146,7 +149,7 @@ MonoBehaviour:
   mask:
     serializedVersion: 2
     m_Bits: 64
---- !u!70 &9174840942072364279
+--- !u!70 &4484902742516676117
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -177,6 +180,43 @@ CapsuleCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0.18}
+  m_Size: {x: 1.74, y: 2.55}
+  m_Direction: 0
+--- !u!70 &9174840942072364279
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748564517843244739}
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0

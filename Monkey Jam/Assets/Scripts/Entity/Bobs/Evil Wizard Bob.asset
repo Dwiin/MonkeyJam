@@ -19,19 +19,23 @@ MonoBehaviour:
     Armour: 0
     Health: 0
     Resistances: []
-  AnimationController: {fileID: 9100000, guid: 8a0ee7e2feb80d341ba2c500deba0039, type: 2}
+  AnimationController: {fileID: 9100000, guid: f30bacb1c9e005d40aa973b1942f95e5, type: 2}
   Attacks:
-  - Cooldown: 1
-    Damage: 3
-    DamageType: 0
-    AttackColliderIndex: 0
-    IsRanged: 0
-    AttackRange: 3
-    AttackRangeIndex: 0
   - Cooldown: 2
     Damage: 5
     DamageType: 0
     AttackColliderIndex: 0
     IsRanged: 1
+    ProjectilePrefab: {fileID: 5048231894263871456, guid: 794ebfbfc9d8a804cbf3acb0a725d73f, type: 3}
     AttackRange: 5
+    AttackRangeIndex: 0
+    StaminaCost: 0
+  - Cooldown: 1
+    Damage: 3
+    DamageType: 0
+    AttackColliderIndex: 0
+    IsRanged: 0
+    ProjectilePrefab: {fileID: 0}
+    AttackRange: 3
     AttackRangeIndex: 1
+    StaminaCost: 5

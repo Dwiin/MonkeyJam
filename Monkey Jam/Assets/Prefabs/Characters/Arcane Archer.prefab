@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6868644792541438449}
   - component: {fileID: 7786964368590353383}
   - component: {fileID: 4741292400921796336}
+  - component: {fileID: 8680772633096794649}
   m_Layer: 0
   m_Name: Arcane Archer
   m_TagString: Untagged
@@ -83,7 +84,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 8020143640844766479, guid: f55b3e11ecb8b00428d9b434055471ce, type: 3}
+  m_Sprite: {fileID: -5895191231709818157, guid: f55b3e11ecb8b00428d9b434055471ce, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -137,6 +138,7 @@ MonoBehaviour:
   _animator: {fileID: 7786964368590353383}
   _attackColliders: []
   <Data>k__BackingField: {fileID: 11400000, guid: b19e84040df99df40bd090946520420b, type: 2}
+  <BodyCollider>k__BackingField: {fileID: 8680772633096794649}
   isPatroling: 0
   waypoints: []
   attackRange: 0
@@ -145,3 +147,40 @@ MonoBehaviour:
   mask:
     serializedVersion: 2
     m_Bits: 0
+--- !u!70 &8680772633096794649
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872471973404208355}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: -0.07}
+  m_Size: {x: 1.5, y: 2.43}
+  m_Direction: 0

@@ -20,4 +20,12 @@ MonoBehaviour:
     Health: 0
     Resistances: []
   AnimationController: {fileID: 9100000, guid: a2f344819be64d4438a8624eb775387e, type: 2}
-  Attacks: []
+  Attacks:
+  - Cooldown: 0.5
+    Damage: 100
+    DamageType: 0
+    AttackColliderIndex: 1
+    IsRanged: 0
+    AttackRange: 0
+    AttackRangeIndex: 0
+    StaminaCost: 0

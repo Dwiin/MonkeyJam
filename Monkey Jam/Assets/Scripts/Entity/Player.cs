@@ -10,7 +10,6 @@ namespace MonkeyJam.Entities {
     public class Player : EntityBase
     {
         //[SerializeField] private EnemyBase _toPosess; //Debug only, will be removed for actual implementation
-        [SerializeField] private SpriteRenderer _spriteRenderer;
         [SerializeField] private int _maxStamina = 10;
         [Space]
         [Header("Player Movement Shite")]
@@ -33,6 +32,8 @@ namespace MonkeyJam.Entities {
         private EnemyData _initialState;
         private int _currentStamina;
         private bool _isPosessing = false;
+        private Vector2 _initialColliderSize;
+        private Vector2 _initialColliderOffset;
 
         private void Start() {
             if (_spriteRenderer == null) {
@@ -46,6 +47,9 @@ namespace MonkeyJam.Entities {
             }
             _initialState = Data;
             _isPosessing = false;
+            _currentStamina = _maxStamina;
+            _initialColliderSize = BodyCollider.size;
+            _initialColliderOffset = BodyCollider.offset;
         }
 
         private void OnEnable() {
@@ -59,6 +63,7 @@ namespace MonkeyJam.Entities {
             _controls.Player.Jump.performed += OnJump;
             _controls.Player.Attack.performed += OnAttack;
             _controls.Player.Secondary.performed += OnSecondary;
+            _controls.Player.Sprint.performed += OnAbandonBody;
         }
 
         private void OnMovement(InputAction.CallbackContext context) {
@@ -71,25 +76,32 @@ namespace MonkeyJam.Entities {
             }
         }
 
+        private void OnAbandonBody(InputAction.CallbackContext context)
+        {
+            Posess(_initialState);
+        }
+
         private void OnAttack(InputAction.CallbackContext context) {
             if (_currentStamina <= 0 && _isPosessing) return;
             if (Data.Attacks == null || Data.Attacks.Length == 0) return;
             if (_onCooldown.Contains(Data.Attacks[0])) return;
             _currentAttack = Data.Attacks[0];
-            _animator.SetInteger("attackIndex", 0);
+            _animator.SetInteger("attackIndex", _currentAttack.AttackRangeIndex);
             _animator.SetTrigger("Attack");
             StartCoroutine(HandleCooldown(Data.Attacks[0]));
             if (_isPosessing) {
+                Debug.Log($"Consuming {_currentAttack.StaminaCost} stamina");
                 ConsumeStamina(_currentAttack.StaminaCost);
             }
         }
 
         private void OnSecondary(InputAction.CallbackContext context) {
             if (_currentStamina <= 0 && _isPosessing) return;
-            if (Data.Attacks == null || Data.Attacks.Length == 0) return;
+            if (Data.Attacks == null || Data.Attacks.Length < 2) return;
             if (_onCooldown.Contains(Data.Attacks[1])) return;
+            Debug.Log("Secondary attack");
             _currentAttack = Data.Attacks[1];
-            _animator.SetInteger("attackIndex", 1);
+            _animator.SetInteger("attackIndex", _currentAttack.AttackRangeIndex);
             _animator.SetTrigger("Attack");
             StartCoroutine(HandleCooldown(Data.Attacks[1]));
             if (_isPosessing) {
@@ -103,13 +115,35 @@ namespace MonkeyJam.Entities {
             _currentIgnoreGrav = 0;
             _currentJumpTime = 0f;
         }
-        
+
+
+        public void Posess(EntityBase enemy)
+        {
+            EnemyData data = enemy.Data;
+            BodyCollider.size = enemy.BodyCollider.size;
+            BodyCollider.offset = enemy.BodyCollider.offset;
+            _groundCheckPoint.localPosition = new Vector2(0, -BodyCollider.size.y - BodyCollider.offset.y);
+            Posess(enemy.Data);
+        }
+
         public void Posess(EnemyData data)
         {
             SetupStats(data.Stats);
             _currentStamina = _maxStamina;
             _animator.runtimeAnimatorController = data.AnimationController;
-            _isPosessing = data == _initialState;
+            _isPosessing = data != _initialState;
+            Data = data;
+            foreach (Collider2D collider in _attackColliders)
+            {
+                collider.enabled = false;
+            }
+
+            if (data == _initialState)
+            {
+                BodyCollider.size = _initialColliderSize;
+                BodyCollider.offset = _initialColliderOffset;
+                _groundCheckPoint.localPosition = new Vector2(0, -BodyCollider.size.y - BodyCollider.offset.y);
+            }
         }
 
         private void ConsumeStamina(int amount) {
@@ -163,6 +197,10 @@ namespace MonkeyJam.Entities {
             if (collision.gameObject == this.gameObject) return;
             EntityBase entity = collision.gameObject.GetComponent<EntityBase>();
             if (entity == null) return;
+            if (!_isPosessing)
+            {
+                Posess(entity);
+            }
             DamageManager.HandleDamage(new DamageInfo() { Damage = _currentAttack.Damage, DamageType = _currentAttack.DamageType, Target = entity, Source = this });
         }
 
