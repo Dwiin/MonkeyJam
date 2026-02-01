@@ -15,7 +15,7 @@ MonoBehaviour:
   Name: Satyr
   Stats:
     MaxHealth: 1
-    MoveSpeed: 15
+    MoveSpeed: 10
     Armour: 0
     Health: 0
     Resistances: []
