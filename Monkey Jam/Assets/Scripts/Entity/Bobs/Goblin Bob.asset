@@ -41,14 +41,14 @@ MonoBehaviour:
     StaminaCost: 0
   SoundData:
     DeathSound:
-      Clip: {fileID: 0}
-      Volume: 0
+      Clip: {fileID: 8300000, guid: a519cccaed9e9eb46a58c9a06ac6cc71, type: 3}
+      Volume: 1
     DamageSound:
-      Clip: {fileID: 0}
-      Volume: 0
+      Clip: {fileID: 8300000, guid: 731f483822460e342971556f85e58116, type: 3}
+      Volume: 1
     Attack1Sound:
-      Clip: {fileID: 0}
-      Volume: 0
+      Clip: {fileID: 8300000, guid: 1861c61f07958f34e83488e06fce21c2, type: 3}
+      Volume: 1
     Attack2Sound:
-      Clip: {fileID: 0}
-      Volume: 0
+      Clip: {fileID: 8300000, guid: 40c6c5556f3404f4bb9a19daef872659, type: 3}
+      Volume: 1
