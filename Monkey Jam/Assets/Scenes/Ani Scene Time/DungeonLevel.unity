@@ -36046,6 +36046,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2313014797524046649, guid: 67dfb42d00ddefd4a8e5e1a56806f0cb, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5909639378434541564, guid: 67dfb42d00ddefd4a8e5e1a56806f0cb, type: 3}
+      propertyPath: attackRange
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5909639378434541564, guid: 67dfb42d00ddefd4a8e5e1a56806f0cb, type: 3}
+      propertyPath: detectRange
+      value: 1.44
+      objectReference: {fileID: 0}
     - target: {fileID: 5909639378434541564, guid: 67dfb42d00ddefd4a8e5e1a56806f0cb, type: 3}
       propertyPath: _stats.MoveSpeed
       value: 5
@@ -36227,6 +36239,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 554720364488689619, guid: 0647fdadfa95b324bbea8288ff37575b, type: 3}
+      propertyPath: attackRange
+      value: 2.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 554720364488689619, guid: 0647fdadfa95b324bbea8288ff37575b, type: 3}
+      propertyPath: detectRange
+      value: 6.33
+      objectReference: {fileID: 0}
     - target: {fileID: 554720364488689619, guid: 0647fdadfa95b324bbea8288ff37575b, type: 3}
       propertyPath: _stats.MoveSpeed
       value: 5
