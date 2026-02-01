@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MonkeyJam.Entities.EnemyData
   Name: Satyr
   Stats:
-    MaxHealth: 3
-    MoveSpeed: 10
+    MaxHealth: 1
+    MoveSpeed: 15
     Armour: 0
     Health: 0
     Resistances: []
@@ -26,6 +26,7 @@ MonoBehaviour:
     DamageType: 0
     AttackColliderIndex: 1
     IsRanged: 0
+    ProjectilePrefab: {fileID: 0}
     AttackRange: 0
     AttackRangeIndex: 0
     StaminaCost: 0

@@ -7,7 +7,7 @@ namespace MonkeyJam.Managers {
     public class SceneHandler : MonoBehaviour {
         [SerializeField] private Player _player;
         [SerializeField] private Transform _spawnLocation;
-        
+        [SerializeField, Tooltip("Only set this true for the first level")] private bool _firstScene = false;
 
         private void Awake() {
             //Bind events
@@ -16,11 +16,14 @@ namespace MonkeyJam.Managers {
             EventManager.Instance.OnPlayerSpawned += OnPlayerSpawned;
         }
 
-        private void Start() {
+        private void Start()
+        {
+            if (_firstScene) return;
             EventManager.Instance.EndSceneTransition(this);
         }
 
         private void OnSceneTransition(string scene) {
+            Debug.Log($"Loading {scene} scene");
             AsyncOperation loadOp = SceneManager.LoadSceneAsync(scene, LoadSceneMode.Additive); //Add a ui transition maybe, who knows
         }
 

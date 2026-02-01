@@ -97,7 +97,6 @@ namespace MonkeyJam.Entities
             {
                 isPatroling = false;
                 isChasing = true;
-                Debug.Log("Chase");
                 Chasing(hit.transform);
             }
             else

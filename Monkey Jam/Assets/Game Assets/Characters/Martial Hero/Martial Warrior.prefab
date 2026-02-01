@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6227770942716760420}
   - component: {fileID: 4747610900905376368}
   - component: {fileID: 1819151649307225168}
+  - component: {fileID: 7351568775126875915}
   m_Layer: 0
   m_Name: Martial Warrior
   m_TagString: Untagged
@@ -135,12 +136,53 @@ MonoBehaviour:
     Resistances: []
   _rb: {fileID: 0}
   _animator: {fileID: 0}
-  _attackColliders: []
+  _attackColliders:
+  - {fileID: 7351568775126875915}
+  _spriteRenderer: {fileID: 0}
+  <Data>k__BackingField: {fileID: 0}
+  <BodyCollider>k__BackingField: {fileID: 0}
   isPatroling: 0
   waypoints: []
   attackRange: 0
   detectRange: 0
-  <Data>k__BackingField: {fileID: 0}
+  _attackDelay: 5
   mask:
     serializedVersion: 2
     m_Bits: 0
+--- !u!70 &7351568775126875915
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483220885686537926}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 1.3811529, y: 0.6691229}
+  m_Size: {x: 6.088213, y: 3.5489721}
+  m_Direction: 1
