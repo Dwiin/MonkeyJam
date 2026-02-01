@@ -1,4 +1,5 @@
-﻿using MonkeyJam.Managers;
+﻿using System;
+using MonkeyJam.Managers;
 using MonkeyJam.Util;
 using System.Collections;
 using System.Collections.Generic;
@@ -91,6 +92,7 @@ namespace MonkeyJam.Entities {
             {
                 EventManager.Instance.PlayerDied();
                 _spriteRenderer.enabled = false;
+                gameObject.SetActive(false);
             }
         }
 
@@ -248,6 +250,17 @@ namespace MonkeyJam.Entities {
         private void OnDrawGizmosSelected() {
             Gizmos.color = Color.green;
             Gizmos.DrawRay(_groundCheckPoint.position, Vector3.down * _groundCheckLength);
+        }
+
+        private void OnDisable()
+        {
+            _controls.Player.Move.performed -= OnMovement;
+            _controls.Player.Move.canceled -= OnMovement;
+            _controls.Player.Jump.performed -= OnJump;
+            _controls.Player.Attack.performed -= OnAttack;
+            _controls.Player.Secondary.performed -= OnSecondary;
+            _controls.Player.Sprint.performed -= OnAbandonBody;
+            _controls.Player.Disable();
         }
     }
 }
